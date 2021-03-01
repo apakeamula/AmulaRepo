@@ -12,10 +12,10 @@ public interface RiaConstants {
     String mto_table = "custom.mtoaccountopening";
     String mto_orderNo = "txnid";
     String mto_txnId = "txnid";
-    String logPath = "C:\\Users\\sn029154\\Downloads\\RiaWorkplace\\logs\\";
-    //String logPath = "E:\\RIASTPAPplication\\logs\\";   
-    String configPath = "C:\\Users\\sn029154\\Downloads\\RiaWorkplace\\riaprop.properties";
-    //String configPath = "E:\\RIASTPAPplication\\riaprop.properties";
+    //String logPath = "C:\\Users\\sn029154\\Downloads\\RiaWorkplace\\logs\\";
+    String logPath = "E:\\RIASTPAPplication\\logs\\";   
+    //String configPath = "C:\\Users\\sn029154\\Downloads\\RiaWorkplace\\riaprop.properties";
+    String configPath = "E:\\RIASTPAPplication\\riaprop.properties";
     String getDatabaseUser = "DATABASEUSER";
     String getDatabaseUrl= "DATABASEURL";
     String getDatabasePwd = "DATABASEPWD";
