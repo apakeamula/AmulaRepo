@@ -1,0 +1,3286 @@
+11 Jun 2018 10:26:33  INFO-Start Process of Transactions !!!
+%11 Jun 2018 10:26:33  INFO-Start loading properties file
+%11 Jun 2018 10:26:33  INFO-Neft Currency NGN
+%11 Jun 2018 10:26:33  INFO-Validate records first -- 
+%11 Jun 2018 10:26:33  INFO-Enter Get record to Validate Generally
+%11 Jun 2018 10:26:35  INFO-Number of records to be validated -- 22
+%11 Jun 2018 10:26:35  INFO-How Many records here 22
+%11 Jun 2018 10:26:35  INFO-Pick each record to validate -- UK2137438165 -- 0015011588 -- NGN -- 12885.00
+%11 Jun 2018 10:26:35  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:26:35  INFO-Order currency and order no -- NGN -- UK2137438165
+%11 Jun 2018 10:26:36  INFO-Validate NEFT Currency
+%11 Jun 2018 10:26:36  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:26:36  INFO-Order currency -- NGN
+%11 Jun 2018 10:26:36  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:26:36  INFO-Check if account number is Nuban Complaint -- 0015011588 -- UK2137438165 -- 058150000
+%11 Jun 2018 10:26:36  INFO-Bank Code is -- 0015011588 -- 058
+%11 Jun 2018 10:26:36  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0015011588','058') from dual
+%11 Jun 2018 10:26:36  INFO-Account is NUBAN Compliant - 0015011588 -- Y|0015011588
+%11 Jun 2018 10:26:36  INFO-Validate Account Name through FIP == TUMININU GBEMISOLA == OLATUNJI
+%11 Jun 2018 10:26:36  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 10:26:36  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 10:26:36  INFO-Name enquiry set ==> 0015011588 == 058
+%11 Jun 2018 10:26:36  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 10:26:37  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 10:27:06  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 10:27:06  INFO-No name fetched ==> [2] Name enquiry failed.. == UK2137438165
+%11 Jun 2018 10:27:06  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:06  INFO-Merge RiaDtlTbl Insert statement completed  171005160030
+%11 Jun 2018 10:27:06  INFO-Commit RiaDtlTbl Insert statement completed  171005160030
+%11 Jun 2018 10:27:06  INFO-UpdateProcessed flag ==> Y ==> UK2137438165
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  171005160030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  171005160030
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- UK2137438165
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- US487143067 -- 3099639597 -- NGN -- 41000.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3099639597'
+%11 Jun 2018 10:27:07  INFO-Account exist in Finacle -- JIBRIL ADAM -- 0 -- N -- NGN
+%11 Jun 2018 10:27:07  INFO-Start account name validation ==> 
+%11 Jun 2018 10:27:07  INFO-Beneficiary First name 2 exist in Account Name ==> JIBRIL == JIBRIL ADAM == US487143067
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> US487143067
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180501000030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180501000030
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- US487143067
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- US485802067 -- 3060253641 -- NGN -- 33725.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3060253641'
+%11 Jun 2018 10:27:07  INFO-Account exist in Finacle -- OGUNYA OMOTOLA FAITH --   -- N -- NGN
+%11 Jun 2018 10:27:07  INFO-Start account name validation ==> 
+%11 Jun 2018 10:27:07  INFO-Beneficiary First name 2 exist in Account Name ==> OMOTOLA == OGUNYA OMOTOLA FAITH == US485802067
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> US485802067
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- US485802067
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- CA486456967 -- 3020093061 -- NGN -- 30000.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3020093061'
+%11 Jun 2018 10:27:07  INFO-Account exist in Finacle -- OSAYAMON FAITH --   -- N -- NGN
+%11 Jun 2018 10:27:07  INFO-Start account name validation ==> 
+%11 Jun 2018 10:27:07  INFO-Beneficiary First name exist in Account Name ==> FAITH == OSAYAMON FAITH == CA486456967
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> CA486456967
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- CA486456967
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- US487533167 -- 3018591171 -- NGN -- 532500.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3018591171'
+%11 Jun 2018 10:27:07  INFO-Account exist in Finacle -- ARIGUZO, THADDEUS IZUCHUKWU -- 0 -- N -- NGN
+%11 Jun 2018 10:27:07  INFO-Start account name validation ==> 
+%11 Jun 2018 10:27:07  INFO-Beneficiary First name exist in Account Name ==> IZUCHUKWU == ARIGUZO, THADDEUS IZUCHUKWU == US487533167
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> US487533167
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- US487533167
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- US487228567 -- 3213809312 -- NGN -- 3200000.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3213809312'
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:27:07  INFO-Beneficiary Account Does Not Exist  --- 3213809312
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> US487228567
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- US487228567
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- US487489367 -- 3007651921 -- NGN -- 600202.05
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3007651921'
+%11 Jun 2018 10:27:07  INFO-Account exist in Finacle -- OJO JOHN AYODELE (MR) --   -- N -- NGN
+%11 Jun 2018 10:27:07  INFO-Start account name validation ==> 
+%11 Jun 2018 10:27:07  INFO-Beneficiary First name exist in Account Name ==> OJO == OJO JOHN AYODELE (MR) == US487489367
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> US487489367
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- US487489367
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- US488136267 -- 3091438488 -- NGN -- 50000.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3091438488'
+%11 Jun 2018 10:27:07  INFO-Account exist in Finacle -- AGBARA IJEOMA -- 0 -- N -- NGN
+%11 Jun 2018 10:27:07  INFO-Start account name validation ==> 
+%11 Jun 2018 10:27:07  INFO-Beneficiary First name exist in Account Name ==> AGBARA == AGBARA IJEOMA == US488136267
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> US488136267
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- US488136267
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- US488177767 -- 3008268087 -- NGN -- 65320.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3008268087'
+%11 Jun 2018 10:27:07  INFO-Account exist in Finacle -- ONYEMACHI MAGNUS CHIMA --   -- N -- NGN
+%11 Jun 2018 10:27:07  INFO-Start account name validation ==> 
+%11 Jun 2018 10:27:07  INFO-Beneficiary First name exist in Account Name ==> MAGNUS == ONYEMACHI MAGNUS CHIMA == US488177767
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> US488177767
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- US488177767
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- US619017867 -- 0209133531 -- NGN -- 8875.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='0209133531'
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180508204530
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180508204530
+%11 Jun 2018 10:27:07  INFO-Beneficiary Account Does Not Exist  --- 0209133531
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> US619017867
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180508204530
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180508204530
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- US619017867
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- US621689267 -- 3032400345 -- NGN -- 106500.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3032400345'
+%11 Jun 2018 10:27:07  INFO-Account exist in Finacle -- AWOYINKA EMMANUEL ADEBOWALE --   -- N -- NGN
+%11 Jun 2018 10:27:07  INFO-Start account name validation ==> 
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180508234530
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180508234530
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> US621689267
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180508234530
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180508234530
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- US621689267
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- US622252767 -- 1832241019 -- NGN -- 35503.55
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='1832241019'
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180509000030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180509000030
+%11 Jun 2018 10:27:07  INFO-Beneficiary Account Does Not Exist  --- 1832241019
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> US622252767
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180509000030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180509000030
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- US622252767
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- UK613053767 -- 3007428985 -- NGN -- 45600.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3007428985'
+%11 Jun 2018 10:27:07  INFO-Account exist in Finacle -- PRI,TELEDALASE OPELOYEMI --   -- N -- NGN
+%11 Jun 2018 10:27:07  INFO-Start account name validation ==> 
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180508163030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180508163030
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> UK613053767
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180508163030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180508163030
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- UK613053767
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- DE592814167 -- 3113056786 -- NGN -- 842360.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3113056786'
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180507160030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180507160030
+%11 Jun 2018 10:27:07  INFO-Beneficiary Account Does Not Exist  --- 3113056786
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> DE592814167
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180507160030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180507160030
+%11 Jun 2018 10:27:07  INFO-Processed flag updated to successful -- DE592814167
+%11 Jun 2018 10:27:07  INFO-Pick each record to validate -- US585163767 -- 0142391225 -- NGN -- 71000.00
+%11 Jun 2018 10:27:07  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:07  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='0142391225'
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180507003030
+%11 Jun 2018 10:27:07  INFO-Commit RiaDtlTbl Insert statement completed  180507003030
+%11 Jun 2018 10:27:07  INFO-Beneficiary Account Does Not Exist  --- 0142391225
+%11 Jun 2018 10:27:07  INFO-UpdateProcessed flag ==> Y ==> US585163767
+%11 Jun 2018 10:27:07  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:07  INFO-Merge RiaDtlTbl Insert statement completed  180507003030
+%11 Jun 2018 10:27:08  INFO-Commit RiaDtlTbl Insert statement completed  180507003030
+%11 Jun 2018 10:27:08  INFO-Processed flag updated to successful -- US585163767
+%11 Jun 2018 10:27:08  INFO-Pick each record to validate -- BE587401767 -- 3111331971 -- NGN -- 79790.54
+%11 Jun 2018 10:27:08  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:27:08  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3111331971'
+%11 Jun 2018 10:27:08  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:08  INFO-Merge RiaDtlTbl Insert statement completed  180507093030
+%11 Jun 2018 10:27:08  INFO-Commit RiaDtlTbl Insert statement completed  180507093030
+%11 Jun 2018 10:27:08  INFO-Beneficiary Account Does Not Exist  --- 3111331971
+%11 Jun 2018 10:27:08  INFO-UpdateProcessed flag ==> Y ==> BE587401767
+%11 Jun 2018 10:27:08  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:08  INFO-Merge RiaDtlTbl Insert statement completed  180507093030
+%11 Jun 2018 10:27:08  INFO-Commit RiaDtlTbl Insert statement completed  180507093030
+%11 Jun 2018 10:27:08  INFO-Processed flag updated to successful -- BE587401767
+%11 Jun 2018 10:27:08  INFO-Pick each record to validate -- BE608008267 -- 0001309034 -- NGN -- 19601.00
+%11 Jun 2018 10:27:08  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:27:08  INFO-Order currency and order no -- NGN -- BE608008267
+%11 Jun 2018 10:27:08  INFO-Validate NEFT Currency
+%11 Jun 2018 10:27:08  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:27:08  INFO-Order currency -- NGN
+%11 Jun 2018 10:27:08  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:27:08  INFO-Check if account number is Nuban Complaint -- 0001309034 -- BE608008267 -- 068150001
+%11 Jun 2018 10:27:08  INFO-Bank Code is -- 0001309034 -- 068
+%11 Jun 2018 10:27:08  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0001309034','068') from dual
+%11 Jun 2018 10:27:08  INFO-Account is NUBAN Compliant - 0001309034 -- Y|0001309034
+%11 Jun 2018 10:27:08  INFO-Validate Account Name through FIP == GODWIN == OMEH
+%11 Jun 2018 10:27:08  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 10:27:08  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 10:27:08  INFO-Name enquiry set ==> 0001309034 == 068
+%11 Jun 2018 10:27:08  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 10:27:08  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 10:27:30  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 10:27:30  INFO-No name fetched ==> [2] Name enquiry failed.. == BE608008267
+%11 Jun 2018 10:27:30  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:30  INFO-Merge RiaDtlTbl Insert statement completed  180508091530
+%11 Jun 2018 10:27:30  INFO-Commit RiaDtlTbl Insert statement completed  180508091530
+%11 Jun 2018 10:27:30  INFO-UpdateProcessed flag ==> N ==> BE608008267
+%11 Jun 2018 10:27:30  INFO-Pick each record to validate -- US893548967 -- 0021994673 -- NGN -- 52717.50
+%11 Jun 2018 10:27:30  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:27:30  INFO-Order currency and order no -- NGN -- US893548967
+%11 Jun 2018 10:27:30  INFO-Validate NEFT Currency
+%11 Jun 2018 10:27:30  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:27:30  INFO-Order currency -- NGN
+%11 Jun 2018 10:27:30  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:27:30  INFO-Check if account number is Nuban Complaint -- 0021994673 -- US893548967 -- 068150001
+%11 Jun 2018 10:27:30  INFO-Bank Code is -- 0021994673 -- 068
+%11 Jun 2018 10:27:30  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0021994673','068') from dual
+%11 Jun 2018 10:27:30  INFO-Account is not NUBAN Compliant - 0021994673 -- N
+%11 Jun 2018 10:27:30  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:30  INFO-Merge RiaDtlTbl Insert statement completed  180529173030
+%11 Jun 2018 10:27:30  INFO-Commit RiaDtlTbl Insert statement completed  180529173030
+%11 Jun 2018 10:27:30  INFO-UpdateProcessed flag ==> Y ==> US893548967
+%11 Jun 2018 10:27:30  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:30  INFO-Merge RiaDtlTbl Insert statement completed  180529173030
+%11 Jun 2018 10:27:30  INFO-Commit RiaDtlTbl Insert statement completed  180529173030
+%11 Jun 2018 10:27:30  INFO-Processed flag updated to successful -- US893548967
+%11 Jun 2018 10:27:30  INFO-Pick each record to validate -- US943952667 -- 0015604913 -- NGN -- 43931.25
+%11 Jun 2018 10:27:30  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:27:30  INFO-Order currency and order no -- NGN -- US943952667
+%11 Jun 2018 10:27:30  INFO-Validate NEFT Currency
+%11 Jun 2018 10:27:30  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:27:30  INFO-Order currency -- NGN
+%11 Jun 2018 10:27:30  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:27:30  INFO-Check if account number is Nuban Complaint -- 0015604913 -- US943952667 -- 068150001
+%11 Jun 2018 10:27:30  INFO-Bank Code is -- 0015604913 -- 068
+%11 Jun 2018 10:27:30  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0015604913','068') from dual
+%11 Jun 2018 10:27:30  INFO-Account is not NUBAN Compliant - 0015604913 -- N
+%11 Jun 2018 10:27:30  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:30  INFO-Merge RiaDtlTbl Insert statement completed  180529183030
+%11 Jun 2018 10:27:30  INFO-Commit RiaDtlTbl Insert statement completed  180529183030
+%11 Jun 2018 10:27:30  INFO-UpdateProcessed flag ==> Y ==> US943952667
+%11 Jun 2018 10:27:30  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:30  INFO-Merge RiaDtlTbl Insert statement completed  180529183030
+%11 Jun 2018 10:27:30  INFO-Commit RiaDtlTbl Insert statement completed  180529183030
+%11 Jun 2018 10:27:30  INFO-Processed flag updated to successful -- US943952667
+%11 Jun 2018 10:27:30  INFO-Pick each record to validate -- US744718767 -- 2011594406 -- NGN -- 35500.00
+%11 Jun 2018 10:27:30  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:27:30  INFO-Order currency and order no -- NGN -- US744718767
+%11 Jun 2018 10:27:30  INFO-Validate NEFT Currency
+%11 Jun 2018 10:27:30  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:27:30  INFO-Order currency -- NGN
+%11 Jun 2018 10:27:30  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:27:30  INFO-Check if account number is Nuban Complaint -- 2011594406 -- US744718767 -- 035150000
+%11 Jun 2018 10:27:30  INFO-Bank Code is -- 2011594406 -- 035
+%11 Jun 2018 10:27:30  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('2011594406','035') from dual
+%11 Jun 2018 10:27:30  INFO-Account is not NUBAN Compliant - 2011594406 -- N
+%11 Jun 2018 10:27:30  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:30  INFO-Merge RiaDtlTbl Insert statement completed  180515204530
+%11 Jun 2018 10:27:30  INFO-Commit RiaDtlTbl Insert statement completed  180515204530
+%11 Jun 2018 10:27:30  INFO-UpdateProcessed flag ==> Y ==> US744718767
+%11 Jun 2018 10:27:30  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:30  INFO-Merge RiaDtlTbl Insert statement completed  180515204530
+%11 Jun 2018 10:27:30  INFO-Commit RiaDtlTbl Insert statement completed  180515204530
+%11 Jun 2018 10:27:30  INFO-Processed flag updated to successful -- US744718767
+%11 Jun 2018 10:27:30  INFO-Pick each record to validate -- US676701167 -- 0002381017 -- NGN -- 50410.00
+%11 Jun 2018 10:27:30  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:27:30  INFO-Order currency and order no -- NGN -- US676701167
+%11 Jun 2018 10:27:30  INFO-Validate NEFT Currency
+%11 Jun 2018 10:27:30  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:27:30  INFO-Order currency -- NGN
+%11 Jun 2018 10:27:30  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:27:30  INFO-Check if account number is Nuban Complaint -- 0002381017 -- US676701167 -- 068150001
+%11 Jun 2018 10:27:30  INFO-Bank Code is -- 0002381017 -- 068
+%11 Jun 2018 10:27:30  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0002381017','068') from dual
+%11 Jun 2018 10:27:30  INFO-Account is NUBAN Compliant - 0002381017 -- Y|0002381017
+%11 Jun 2018 10:27:30  INFO-Validate Account Name through FIP == AVWARA == OVIE  HENRY
+%11 Jun 2018 10:27:30  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 10:27:30  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 10:27:30  INFO-Name enquiry set ==> 0002381017 == 068
+%11 Jun 2018 10:27:30  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 10:27:31  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 10:27:52  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 10:27:52  INFO-No name fetched ==> [2] Name enquiry failed.. == US676701167
+%11 Jun 2018 10:27:52  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:27:52  INFO-Merge RiaDtlTbl Insert statement completed  180511204530
+%11 Jun 2018 10:27:52  INFO-Commit RiaDtlTbl Insert statement completed  180511204530
+%11 Jun 2018 10:27:52  INFO-UpdateProcessed flag ==> N ==> US676701167
+%11 Jun 2018 10:27:52  INFO-Pick each record to validate -- DE507520867 -- 0230134560 -- NGN -- 100000.00
+%11 Jun 2018 10:27:52  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:27:52  INFO-Order currency and order no -- NGN -- DE507520867
+%11 Jun 2018 10:27:52  INFO-Validate NEFT Currency
+%11 Jun 2018 10:27:52  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:27:52  INFO-Order currency -- NGN
+%11 Jun 2018 10:27:52  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:27:52  INFO-Check if account number is Nuban Complaint -- 0230134560 -- DE507520867 -- 035150000
+%11 Jun 2018 10:27:52  INFO-Bank Code is -- 0230134560 -- 035
+%11 Jun 2018 10:27:52  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0230134560','035') from dual
+%11 Jun 2018 10:27:52  INFO-Account is NUBAN Compliant - 0230134560 -- Y|0230134560
+%11 Jun 2018 10:27:52  INFO-Validate Account Name through FIP == Ogbemuda == Ogierihie
+%11 Jun 2018 10:27:52  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 10:27:52  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 10:27:52  INFO-Name enquiry set ==> 0230134560 == 035
+%11 Jun 2018 10:27:52  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 10:27:53  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 10:28:14  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 10:28:14  INFO-No name fetched ==> [2] Name enquiry failed.. == DE507520867
+%11 Jun 2018 10:28:14  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:28:14  INFO-Merge RiaDtlTbl Insert statement completed  180502153030
+%11 Jun 2018 10:28:14  INFO-Commit RiaDtlTbl Insert statement completed  180502153030
+%11 Jun 2018 10:28:14  INFO-UpdateProcessed flag ==> N ==> DE507520867
+%11 Jun 2018 10:28:14  INFO-Get record for posting for FBN --
+%11 Jun 2018 10:28:14  INFO-Number of records gotten for processing -- 7 -- 2018-06-11 10:28:14.818
+%11 Jun 2018 10:28:14  INFO-Order No -- US487143067
+%11 Jun 2018 10:28:14  INFO-transaction Currency -- NGN
+%11 Jun 2018 10:28:14  INFO-transaction Amount -- 41000.00
+%11 Jun 2018 10:28:14  INFO-transaction Reason --  
+%11 Jun 2018 10:28:14  INFO-Credit Account -- 3099639597
+%11 Jun 2018 10:28:14  INFO-Payment Reference -- null
+%11 Jun 2018 10:28:14  INFO-Tran Pin -- 12847363385
+%11 Jun 2018 10:28:14  INFO-Received Date -- Mon Jun 11 12:00:32 WAT 2018
+%11 Jun 2018 10:28:14  INFO-Senders Name = SUWAIBA MOHAMMED UMAR  
+%11 Jun 2018 10:28:14  INFO-Final Credit account -- 3099639597 -- Y
+%11 Jun 2018 10:28:14  INFO-Suspense account to debit -- 99919700002601
+%11 Jun 2018 10:28:14  INFO-Time different maximum ==  100
+%11 Jun 2018 10:28:14  INFO-sysdate: 2018-06-11 10:28:14.0
+%11 Jun 2018 10:28:14  INFO-Difference itself -- -5538000
+%11 Jun 2018 10:28:14  INFO-diffHours: -1
+%11 Jun 2018 10:28:14  INFO-hoursElapsed = false
+%11 Jun 2018 10:28:14  INFO-Post Transaction -- Mon Jun 11 09:15:33 WAT 2018 -- 3099639597 -- RIA/12847363385/SUWAIBA MOHAMMED UMAR   -- 99919700002601 -- 41000.00 -- US487143067
+%11 Jun 2018 10:28:15  INFO-Start to post transaction -- Mon Jun 11 10:28:15 WAT 2018
+%11 Jun 2018 10:28:15  INFO-Before Send
+%11 Jun 2018 10:28:15  INFO-After Send
+%11 Jun 2018 10:28:16  INFO-Response -- 000 -- US487143067
+%11 Jun 2018 10:28:16  INFO-End of process record in C24 -- US487143067
+%11 Jun 2018 10:28:16  INFO-Response from Connect24 -- 000
+%11 Jun 2018 10:28:16  INFO-Response description of the response gotten
+%11 Jun 2018 10:28:16  INFO-Get Tran ID Class -- 12847363385 -- 3099639597
+%11 Jun 2018 10:28:16  INFO-SELECT TRAN_ID FROM TBAADM.DTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3099639597' ) AND r.TRAN_RMKS='12847363385' AND r.PART_TRAN_TYPE='C' UNION SELECT TRAN_ID FROM TBAADM.HTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3099639597' ) AND r.TRAN_RMKS='12847363385' AND r.PART_TRAN_TYPE='C'
+%11 Jun 2018 10:28:16  INFO-TranId of transaction --S62900717
+%11 Jun 2018 10:28:16  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:28:16  INFO-Merge RiaDtlTbl Insert statement completed  180501000030
+%11 Jun 2018 10:28:16  INFO-Commit RiaDtlTbl Insert statement completed  180501000030
+%11 Jun 2018 10:28:16  INFO-Order No -- US485802067
+%11 Jun 2018 10:28:16  INFO-transaction Currency -- NGN
+%11 Jun 2018 10:28:16  INFO-transaction Amount -- 33725.00
+%11 Jun 2018 10:28:16  INFO-transaction Reason --  
+%11 Jun 2018 10:28:16  INFO-Credit Account -- 3060253641
+%11 Jun 2018 10:28:16  INFO-Payment Reference -- null
+%11 Jun 2018 10:28:16  INFO-Tran Pin -- 12847355353
+%11 Jun 2018 10:28:16  INFO-Received Date -- Mon Jun 11 12:00:32 WAT 2018
+%11 Jun 2018 10:28:16  INFO-Senders Name = KEHINDE RICHARD OGUNYA  
+%11 Jun 2018 10:28:16  INFO-Final Credit account -- 3060253641 -- Y
+%11 Jun 2018 10:28:16  INFO-Suspense account to debit -- 99919700002601
+%11 Jun 2018 10:28:16  INFO-Time different maximum ==  100
+%11 Jun 2018 10:28:16  INFO-sysdate: 2018-06-11 10:28:16.0
+%11 Jun 2018 10:28:16  INFO-Difference itself -- -5536000
+%11 Jun 2018 10:28:16  INFO-diffHours: -1
+%11 Jun 2018 10:28:16  INFO-hoursElapsed = false
+%11 Jun 2018 10:28:16  INFO-Post Transaction -- Mon Jun 11 09:15:33 WAT 2018 -- 3060253641 -- RIA/12847355353/KEHINDE RICHARD OGUNYA   -- 99919700002601 -- 33725.00 -- US485802067
+%11 Jun 2018 10:28:16  INFO-Start to post transaction -- Mon Jun 11 10:28:16 WAT 2018
+%11 Jun 2018 10:28:16  INFO-Before Send
+%11 Jun 2018 10:28:16  INFO-After Send
+%11 Jun 2018 10:28:17  INFO-Response -- 000 -- US485802067
+%11 Jun 2018 10:28:17  INFO-End of process record in C24 -- US485802067
+%11 Jun 2018 10:28:17  INFO-Response from Connect24 -- 000
+%11 Jun 2018 10:28:17  INFO-Response description of the response gotten
+%11 Jun 2018 10:28:17  INFO-Get Tran ID Class -- 12847355353 -- 3060253641
+%11 Jun 2018 10:28:17  INFO-SELECT TRAN_ID FROM TBAADM.DTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3060253641' ) AND r.TRAN_RMKS='12847355353' AND r.PART_TRAN_TYPE='C' UNION SELECT TRAN_ID FROM TBAADM.HTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3060253641' ) AND r.TRAN_RMKS='12847355353' AND r.PART_TRAN_TYPE='C'
+%11 Jun 2018 10:28:18  INFO-TranId of transaction --S62900718
+%11 Jun 2018 10:28:18  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:28:18  INFO-Merge RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:28:18  INFO-Commit RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:28:18  INFO-Order No -- CA486456967
+%11 Jun 2018 10:28:18  INFO-transaction Currency -- NGN
+%11 Jun 2018 10:28:18  INFO-transaction Amount -- 30000.00
+%11 Jun 2018 10:28:18  INFO-transaction Reason --  
+%11 Jun 2018 10:28:18  INFO-Credit Account -- 3020093061
+%11 Jun 2018 10:28:18  INFO-Payment Reference -- null
+%11 Jun 2018 10:28:18  INFO-Tran Pin -- 12847345424
+%11 Jun 2018 10:28:18  INFO-Received Date -- Mon Jun 11 12:00:32 WAT 2018
+%11 Jun 2018 10:28:18  INFO-Senders Name = Bibi Aruode  
+%11 Jun 2018 10:28:18  INFO-Final Credit account -- 3020093061 -- Y
+%11 Jun 2018 10:28:18  INFO-Suspense account to debit -- 99919700002601
+%11 Jun 2018 10:28:18  INFO-Time different maximum ==  100
+%11 Jun 2018 10:28:18  INFO-sysdate: 2018-06-11 10:28:18.0
+%11 Jun 2018 10:28:18  INFO-Difference itself -- -5534000
+%11 Jun 2018 10:28:18  INFO-diffHours: -1
+%11 Jun 2018 10:28:18  INFO-hoursElapsed = false
+%11 Jun 2018 10:28:18  INFO-Post Transaction -- Mon Jun 11 09:15:33 WAT 2018 -- 3020093061 -- RIA/12847345424/Bibi Aruode   -- 99919700002601 -- 30000.00 -- CA486456967
+%11 Jun 2018 10:28:19  INFO-Start to post transaction -- Mon Jun 11 10:28:19 WAT 2018
+%11 Jun 2018 10:28:19  INFO-Before Send
+%11 Jun 2018 10:28:19  INFO-After Send
+%11 Jun 2018 10:28:19  INFO-Response -- 000 -- CA486456967
+%11 Jun 2018 10:28:19  INFO-End of process record in C24 -- CA486456967
+%11 Jun 2018 10:28:19  INFO-Response from Connect24 -- 000
+%11 Jun 2018 10:28:19  INFO-Response description of the response gotten
+%11 Jun 2018 10:28:19  INFO-Get Tran ID Class -- 12847345424 -- 3020093061
+%11 Jun 2018 10:28:19  INFO-SELECT TRAN_ID FROM TBAADM.DTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3020093061' ) AND r.TRAN_RMKS='12847345424' AND r.PART_TRAN_TYPE='C' UNION SELECT TRAN_ID FROM TBAADM.HTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3020093061' ) AND r.TRAN_RMKS='12847345424' AND r.PART_TRAN_TYPE='C'
+%11 Jun 2018 10:28:20  INFO-TranId of transaction --S62900719
+%11 Jun 2018 10:28:20  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:28:20  INFO-Merge RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:28:20  INFO-Commit RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:28:20  INFO-Order No -- US487533167
+%11 Jun 2018 10:28:20  INFO-transaction Currency -- NGN
+%11 Jun 2018 10:28:20  INFO-transaction Amount -- 532500.00
+%11 Jun 2018 10:28:20  INFO-transaction Reason -- Medical Expenses
+%11 Jun 2018 10:28:20  INFO-Credit Account -- 3018591171
+%11 Jun 2018 10:28:20  INFO-Payment Reference -- null
+%11 Jun 2018 10:28:20  INFO-Tran Pin -- 12847354230
+%11 Jun 2018 10:28:20  INFO-Received Date -- Mon Jun 11 12:00:32 WAT 2018
+%11 Jun 2018 10:28:20  INFO-Senders Name = MACLEO I ARIGUZO  
+%11 Jun 2018 10:28:20  INFO-Final Credit account -- 3018591171 -- Y
+%11 Jun 2018 10:28:20  INFO-Suspense account to debit -- 99919700002601
+%11 Jun 2018 10:28:20  INFO-Time different maximum ==  100
+%11 Jun 2018 10:28:20  INFO-sysdate: 2018-06-11 10:28:20.0
+%11 Jun 2018 10:28:20  INFO-Difference itself -- -5532000
+%11 Jun 2018 10:28:20  INFO-diffHours: -1
+%11 Jun 2018 10:28:20  INFO-hoursElapsed = false
+%11 Jun 2018 10:28:20  INFO-Post Transaction -- Mon Jun 11 09:15:33 WAT 2018 -- 3018591171 -- RIA/12847354230/MACLEO I ARIGUZO   -- 99919700002601 -- 532500.00 -- US487533167
+%11 Jun 2018 10:28:20  INFO-Start to post transaction -- Mon Jun 11 10:28:20 WAT 2018
+%11 Jun 2018 10:28:20  INFO-Before Send
+%11 Jun 2018 10:28:20  INFO-After Send
+%11 Jun 2018 10:28:21  INFO-Response -- 000 -- US487533167
+%11 Jun 2018 10:28:21  INFO-End of process record in C24 -- US487533167
+%11 Jun 2018 10:28:21  INFO-Response from Connect24 -- 000
+%11 Jun 2018 10:28:21  INFO-Response description of the response gotten
+%11 Jun 2018 10:28:21  INFO-Get Tran ID Class -- 12847354230 -- 3018591171
+%11 Jun 2018 10:28:21  INFO-SELECT TRAN_ID FROM TBAADM.DTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3018591171' ) AND r.TRAN_RMKS='12847354230' AND r.PART_TRAN_TYPE='C' UNION SELECT TRAN_ID FROM TBAADM.HTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3018591171' ) AND r.TRAN_RMKS='12847354230' AND r.PART_TRAN_TYPE='C'
+%11 Jun 2018 10:28:21  INFO-TranId of transaction --S62900720
+%11 Jun 2018 10:28:21  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:28:21  INFO-Merge RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:28:21  INFO-Commit RiaDtlTbl Insert statement completed  180501001530
+%11 Jun 2018 10:28:21  INFO-Order No -- US487489367
+%11 Jun 2018 10:28:21  INFO-transaction Currency -- NGN
+%11 Jun 2018 10:28:21  INFO-transaction Amount -- 600202.05
+%11 Jun 2018 10:28:21  INFO-transaction Reason -- House Construction
+%11 Jun 2018 10:28:21  INFO-Credit Account -- 3007651921
+%11 Jun 2018 10:28:21  INFO-Payment Reference -- null
+%11 Jun 2018 10:28:21  INFO-Tran Pin -- 12847378568
+%11 Jun 2018 10:28:21  INFO-Received Date -- Mon Jun 11 12:00:32 WAT 2018
+%11 Jun 2018 10:28:21  INFO-Senders Name = Oyakhilome Wallace Ibhagui  
+%11 Jun 2018 10:28:21  INFO-Final Credit account -- 3007651921 -- Y
+%11 Jun 2018 10:28:21  INFO-Suspense account to debit -- 99919700002601
+%11 Jun 2018 10:28:21  INFO-Time different maximum ==  100
+%11 Jun 2018 10:28:21  INFO-sysdate: 2018-06-11 10:28:21.0
+%11 Jun 2018 10:28:21  INFO-Difference itself -- -5531000
+%11 Jun 2018 10:28:21  INFO-diffHours: -1
+%11 Jun 2018 10:28:21  INFO-hoursElapsed = false
+%11 Jun 2018 10:28:21  INFO-Post Transaction -- Mon Jun 11 09:15:33 WAT 2018 -- 3007651921 -- RIA/12847378568/Oyakhilome Wallace Ibhagui   -- 99919700002601 -- 600202.05 -- US487489367
+%11 Jun 2018 10:28:21  INFO-Start to post transaction -- Mon Jun 11 10:28:21 WAT 2018
+%11 Jun 2018 10:28:21  INFO-Before Send
+%11 Jun 2018 10:28:21  INFO-After Send
+%11 Jun 2018 10:28:22  INFO-Response -- 000 -- US487489367
+%11 Jun 2018 10:28:22  INFO-End of process record in C24 -- US487489367
+%11 Jun 2018 10:28:22  INFO-Response from Connect24 -- 000
+%11 Jun 2018 10:28:22  INFO-Response description of the response gotten
+%11 Jun 2018 10:28:22  INFO-Get Tran ID Class -- 12847378568 -- 3007651921
+%11 Jun 2018 10:28:22  INFO-SELECT TRAN_ID FROM TBAADM.DTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3007651921' ) AND r.TRAN_RMKS='12847378568' AND r.PART_TRAN_TYPE='C' UNION SELECT TRAN_ID FROM TBAADM.HTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3007651921' ) AND r.TRAN_RMKS='12847378568' AND r.PART_TRAN_TYPE='C'
+%11 Jun 2018 10:28:22  INFO-TranId of transaction --S62900721
+%11 Jun 2018 10:28:22  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:28:22  INFO-Merge RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:28:22  INFO-Commit RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:28:22  INFO-Order No -- US488136267
+%11 Jun 2018 10:28:22  INFO-transaction Currency -- NGN
+%11 Jun 2018 10:28:22  INFO-transaction Amount -- 50000.00
+%11 Jun 2018 10:28:22  INFO-transaction Reason --  
+%11 Jun 2018 10:28:22  INFO-Credit Account -- 3091438488
+%11 Jun 2018 10:28:22  INFO-Payment Reference -- null
+%11 Jun 2018 10:28:22  INFO-Tran Pin -- 12847489776
+%11 Jun 2018 10:28:22  INFO-Received Date -- Mon Jun 11 12:00:32 WAT 2018
+%11 Jun 2018 10:28:22  INFO-Senders Name = EMMANUEL OPUTA  
+%11 Jun 2018 10:28:22  INFO-Final Credit account -- 3091438488 -- Y
+%11 Jun 2018 10:28:22  INFO-Suspense account to debit -- 99919700002601
+%11 Jun 2018 10:28:22  INFO-Time different maximum ==  100
+%11 Jun 2018 10:28:22  INFO-sysdate: 2018-06-11 10:28:22.0
+%11 Jun 2018 10:28:22  INFO-Difference itself -- -5530000
+%11 Jun 2018 10:28:22  INFO-diffHours: -1
+%11 Jun 2018 10:28:22  INFO-hoursElapsed = false
+%11 Jun 2018 10:28:22  INFO-Post Transaction -- Mon Jun 11 09:15:33 WAT 2018 -- 3091438488 -- RIA/12847489776/EMMANUEL OPUTA   -- 99919700002601 -- 50000.00 -- US488136267
+%11 Jun 2018 10:28:22  INFO-Start to post transaction -- Mon Jun 11 10:28:22 WAT 2018
+%11 Jun 2018 10:28:22  INFO-Before Send
+%11 Jun 2018 10:28:22  INFO-After Send
+%11 Jun 2018 10:28:23  INFO-Response -- 000 -- US488136267
+%11 Jun 2018 10:28:23  INFO-End of process record in C24 -- US488136267
+%11 Jun 2018 10:28:23  INFO-Response from Connect24 -- 000
+%11 Jun 2018 10:28:23  INFO-Response description of the response gotten
+%11 Jun 2018 10:28:23  INFO-Get Tran ID Class -- 12847489776 -- 3091438488
+%11 Jun 2018 10:28:23  INFO-SELECT TRAN_ID FROM TBAADM.DTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3091438488' ) AND r.TRAN_RMKS='12847489776' AND r.PART_TRAN_TYPE='C' UNION SELECT TRAN_ID FROM TBAADM.HTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3091438488' ) AND r.TRAN_RMKS='12847489776' AND r.PART_TRAN_TYPE='C'
+%11 Jun 2018 10:28:24  INFO-TranId of transaction --S62900722
+%11 Jun 2018 10:28:24  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:28:24  INFO-Merge RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:28:24  INFO-Commit RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:28:24  INFO-Order No -- US488177767
+%11 Jun 2018 10:28:24  INFO-transaction Currency -- NGN
+%11 Jun 2018 10:28:24  INFO-transaction Amount -- 65320.00
+%11 Jun 2018 10:28:24  INFO-transaction Reason --  
+%11 Jun 2018 10:28:24  INFO-Credit Account -- 3008268087
+%11 Jun 2018 10:28:24  INFO-Payment Reference -- null
+%11 Jun 2018 10:28:24  INFO-Tran Pin -- 12847438670
+%11 Jun 2018 10:28:24  INFO-Received Date -- Mon Jun 11 12:00:32 WAT 2018
+%11 Jun 2018 10:28:24  INFO-Senders Name = LAWRENCIA N KORRIE  
+%11 Jun 2018 10:28:24  INFO-Final Credit account -- 3008268087 -- Y
+%11 Jun 2018 10:28:24  INFO-Suspense account to debit -- 99919700002601
+%11 Jun 2018 10:28:24  INFO-Time different maximum ==  100
+%11 Jun 2018 10:28:24  INFO-sysdate: 2018-06-11 10:28:24.0
+%11 Jun 2018 10:28:24  INFO-Difference itself -- -5528000
+%11 Jun 2018 10:28:24  INFO-diffHours: -1
+%11 Jun 2018 10:28:24  INFO-hoursElapsed = false
+%11 Jun 2018 10:28:24  INFO-Post Transaction -- Mon Jun 11 09:15:33 WAT 2018 -- 3008268087 -- RIA/12847438670/LAWRENCIA N KORRIE   -- 99919700002601 -- 65320.00 -- US488177767
+%11 Jun 2018 10:28:24  INFO-Start to post transaction -- Mon Jun 11 10:28:24 WAT 2018
+%11 Jun 2018 10:28:24  INFO-Before Send
+%11 Jun 2018 10:28:24  INFO-After Send
+%11 Jun 2018 10:28:26  INFO-Response -- 000 -- US488177767
+%11 Jun 2018 10:28:26  INFO-End of process record in C24 -- US488177767
+%11 Jun 2018 10:28:26  INFO-Response from Connect24 -- 000
+%11 Jun 2018 10:28:26  INFO-Response description of the response gotten
+%11 Jun 2018 10:28:26  INFO-Get Tran ID Class -- 12847438670 -- 3008268087
+%11 Jun 2018 10:28:26  INFO-SELECT TRAN_ID FROM TBAADM.DTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3008268087' ) AND r.TRAN_RMKS='12847438670' AND r.PART_TRAN_TYPE='C' UNION SELECT TRAN_ID FROM TBAADM.HTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3008268087' ) AND r.TRAN_RMKS='12847438670' AND r.PART_TRAN_TYPE='C'
+%11 Jun 2018 10:28:26  INFO-TranId of transaction --S62900723
+%11 Jun 2018 10:28:26  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:28:26  INFO-Merge RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:28:26  INFO-Commit RiaDtlTbl Insert statement completed  180501010030
+%11 Jun 2018 10:28:26  INFO-Get all pending Neft transactions
+%11 Jun 2018 10:28:26  INFO-How many records in the list neftTransactions class -- 0
+%11 Jun 2018 10:28:26  INFO-Enter Get Status of order after processing --
+%11 Jun 2018 10:28:27  INFO-Request sent to RIA -- <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ces="CES.Services.FXGlobal">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ces:InputOrderStatusNotices>
+           <ces:xmlDoc>
+<Root xmlns:ns2="CES.Services.FXGlobal">
+  <PayingCorrespID>6737914</PayingCorrespID>
+  <InputLayoutVersion>1.1</InputLayoutVersion>
+  <OrderStatusNotices>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119570066</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119694466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012001530</PCOrderNo>
+<SCOrderNo>US119760966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012003030</PCOrderNo>
+<SCOrderNo>US118937466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012151530</PCOrderNo>
+<SCOrderNo>IE124108166</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012173030</PCOrderNo>
+<SCOrderNo>UK126073966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171013021530</PCOrderNo>
+<SCOrderNo>US903133182</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005000030</PCOrderNo>
+<SCOrderNo>CA2131718165</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005001530</PCOrderNo>
+<SCOrderNo>CA2131811865</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131949665</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDNo>A0000</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>CA2131972065</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDNo>23212</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131996465</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2132018365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005010030</PCOrderNo>
+<SCOrderNo>US2132234765</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891197982</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891205982</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005013030</PCOrderNo>
+<SCOrderNo>US2132473365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDNo>08022969588</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>AU2133933965</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>UK2133947665</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005113030</PCOrderNo>
+<SCOrderNo>DE2134634565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005134530</PCOrderNo>
+<SCOrderNo>US891638782</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005160030</PCOrderNo>
+<SCOrderNo>UK2137438165</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005223030</PCOrderNo>
+<SCOrderNo>US2142775365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005231530</PCOrderNo>
+<SCOrderNo>US2143245565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501000030</PCOrderNo>
+<SCOrderNo>US487143067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US485802067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>CA486456967</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US487533167</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487228567</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487489367</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488136267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488177767</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508204530</PCOrderNo>
+<SCOrderNo>US619017867</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508234530</PCOrderNo>
+<SCOrderNo>US621689267</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180509000030</PCOrderNo>
+<SCOrderNo>US622252767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508163030</PCOrderNo>
+<SCOrderNo>UK613053767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507160030</PCOrderNo>
+<SCOrderNo>DE592814167</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507003030</PCOrderNo>
+<SCOrderNo>US585163767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507093030</PCOrderNo>
+<SCOrderNo>BE587401767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529173030</PCOrderNo>
+<SCOrderNo>US893548967</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529183030</PCOrderNo>
+<SCOrderNo>US943952667</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180515204530</PCOrderNo>
+<SCOrderNo>US744718767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+  </OrderStatusNotices>
+</Root>
+         </ces:xmlDoc>
+      </ces:InputOrderStatusNotices>
+   </soapenv:Body>
+</soapenv:Envelope>
+%11 Jun 2018 10:28:27  INFO-System date for insert RiaRequest -- Mon Jun 11 10:28:27 WAT 2018-2134534581871282522
+%11 Jun 2018 10:28:27  INFO-Final XML passed for order status received  -- <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ces="CES.Services.FXGlobal">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ces:InputOrderStatusNotices>
+           <ces:xmlDoc>
+<Root xmlns:ns2="CES.Services.FXGlobal">
+  <PayingCorrespID>6737914</PayingCorrespID>
+  <InputLayoutVersion>1.1</InputLayoutVersion>
+  <OrderStatusNotices>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119570066</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119694466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012001530</PCOrderNo>
+<SCOrderNo>US119760966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012003030</PCOrderNo>
+<SCOrderNo>US118937466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012151530</PCOrderNo>
+<SCOrderNo>IE124108166</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012173030</PCOrderNo>
+<SCOrderNo>UK126073966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171013021530</PCOrderNo>
+<SCOrderNo>US903133182</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005000030</PCOrderNo>
+<SCOrderNo>CA2131718165</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005001530</PCOrderNo>
+<SCOrderNo>CA2131811865</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131949665</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDNo>A0000</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>CA2131972065</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDNo>23212</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131996465</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2132018365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005010030</PCOrderNo>
+<SCOrderNo>US2132234765</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891197982</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891205982</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005013030</PCOrderNo>
+<SCOrderNo>US2132473365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDNo>08022969588</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>AU2133933965</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>UK2133947665</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005113030</PCOrderNo>
+<SCOrderNo>DE2134634565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005134530</PCOrderNo>
+<SCOrderNo>US891638782</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005160030</PCOrderNo>
+<SCOrderNo>UK2137438165</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005223030</PCOrderNo>
+<SCOrderNo>US2142775365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005231530</PCOrderNo>
+<SCOrderNo>US2143245565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501000030</PCOrderNo>
+<SCOrderNo>US487143067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US485802067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>CA486456967</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US487533167</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487228567</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487489367</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488136267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488177767</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508204530</PCOrderNo>
+<SCOrderNo>US619017867</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508234530</PCOrderNo>
+<SCOrderNo>US621689267</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180509000030</PCOrderNo>
+<SCOrderNo>US622252767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508163030</PCOrderNo>
+<SCOrderNo>UK613053767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507160030</PCOrderNo>
+<SCOrderNo>DE592814167</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507003030</PCOrderNo>
+<SCOrderNo>US585163767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507093030</PCOrderNo>
+<SCOrderNo>BE587401767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529173030</PCOrderNo>
+<SCOrderNo>US893548967</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529183030</PCOrderNo>
+<SCOrderNo>US943952667</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180515204530</PCOrderNo>
+<SCOrderNo>US744718767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+  </OrderStatusNotices>
+</Root>
+         </ces:xmlDoc>
+      </ces:InputOrderStatusNotices>
+   </soapenv:Body>
+</soapenv:Envelope> EndpointUrl -- http://stagingfxglobalwebsvcnocert.riaenvia.net:9771/FXGlobalSending.svc/Binding_Basic_NoCert EndpointTimeout --1000000
+%11 Jun 2018 10:28:27  INFO-Size of records sent -- 42
+%11 Jun 2018 10:28:27  INFO-sending http request with EndPoint URL : http://stagingfxglobalwebsvcnocert.riaenvia.net:9771/FXGlobalSending.svc/Binding_Basic_NoCert
+%11 Jun 2018 10:28:27  INFO-sending formated message 
+ : <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ces="CES.Services.FXGlobal">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ces:InputOrderStatusNotices>
+           <ces:xmlDoc>
+<Root xmlns:ns2="CES.Services.FXGlobal">
+  <PayingCorrespID>6737914</PayingCorrespID>
+  <InputLayoutVersion>1.1</InputLayoutVersion>
+  <OrderStatusNotices>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119570066</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119694466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012001530</PCOrderNo>
+<SCOrderNo>US119760966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012003030</PCOrderNo>
+<SCOrderNo>US118937466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012151530</PCOrderNo>
+<SCOrderNo>IE124108166</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012173030</PCOrderNo>
+<SCOrderNo>UK126073966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171013021530</PCOrderNo>
+<SCOrderNo>US903133182</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005000030</PCOrderNo>
+<SCOrderNo>CA2131718165</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005001530</PCOrderNo>
+<SCOrderNo>CA2131811865</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131949665</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDNo>A0000</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>CA2131972065</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDNo>23212</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131996465</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2132018365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005010030</PCOrderNo>
+<SCOrderNo>US2132234765</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891197982</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891205982</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005013030</PCOrderNo>
+<SCOrderNo>US2132473365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDNo>08022969588</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>AU2133933965</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>UK2133947665</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005113030</PCOrderNo>
+<SCOrderNo>DE2134634565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005134530</PCOrderNo>
+<SCOrderNo>US891638782</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005160030</PCOrderNo>
+<SCOrderNo>UK2137438165</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005223030</PCOrderNo>
+<SCOrderNo>US2142775365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005231530</PCOrderNo>
+<SCOrderNo>US2143245565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501000030</PCOrderNo>
+<SCOrderNo>US487143067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US485802067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>CA486456967</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US487533167</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487228567</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487489367</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488136267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488177767</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508204530</PCOrderNo>
+<SCOrderNo>US619017867</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508234530</PCOrderNo>
+<SCOrderNo>US621689267</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180509000030</PCOrderNo>
+<SCOrderNo>US622252767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508163030</PCOrderNo>
+<SCOrderNo>UK613053767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507160030</PCOrderNo>
+<SCOrderNo>DE592814167</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507003030</PCOrderNo>
+<SCOrderNo>US585163767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507093030</PCOrderNo>
+<SCOrderNo>BE587401767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529173030</PCOrderNo>
+<SCOrderNo>US893548967</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529183030</PCOrderNo>
+<SCOrderNo>US943952667</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180515204530</PCOrderNo>
+<SCOrderNo>US744718767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>102827</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+  </OrderStatusNotices>
+</Root>
+         </ces:xmlDoc>
+      </ces:InputOrderStatusNotices>
+   </soapenv:Body>
+</soapenv:Envelope>
+%11 Jun 2018 10:28:27  INFO-Local Variables declared
+%11 Jun 2018 10:28:27  INFO-opened http connection
+%11 Jun 2018 10:28:48  INFO-closed httpUrlConn
+%11 Jun 2018 10:28:48  ERROR-Error occured in sending status update to RIA system -- java.net.ConnectException: Connection timed out: connect
+%11 Jun 2018 10:28:48  INFO-Status not updated for records !!!!!
+%11 Jun 2018 10:41:36  INFO-Start Process of Transactions !!!
+%11 Jun 2018 10:41:36  INFO-Start loading properties file
+%11 Jun 2018 10:41:36  INFO-Neft Currency NGN
+%11 Jun 2018 10:41:36  INFO-Validate records first -- 
+%11 Jun 2018 10:41:36  INFO-Enter Get record to Validate Generally
+%11 Jun 2018 10:41:38  INFO-Number of records to be validated -- 7
+%11 Jun 2018 10:41:38  INFO-How Many records here 7
+%11 Jun 2018 10:41:38  INFO-Pick each record to validate -- BE608008267 -- 0001309034 -- NGN -- 19601.00
+%11 Jun 2018 10:41:38  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:41:38  INFO-Order currency and order no -- NGN -- BE608008267
+%11 Jun 2018 10:41:38  INFO-Validate NEFT Currency
+%11 Jun 2018 10:41:38  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:41:38  INFO-Order currency -- NGN
+%11 Jun 2018 10:41:38  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:41:38  INFO-Check if account number is Nuban Complaint -- 0001309034 -- BE608008267 -- 068150001
+%11 Jun 2018 10:41:38  INFO-Bank Code is -- 0001309034 -- 068
+%11 Jun 2018 10:41:38  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0001309034','068') from dual
+%11 Jun 2018 10:41:38  INFO-Account is NUBAN Compliant - 0001309034 -- Y|0001309034
+%11 Jun 2018 10:41:38  INFO-Validate Account Name through FIP == GODWIN == OMEH
+%11 Jun 2018 10:41:38  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 10:41:38  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 10:41:38  INFO-Name enquiry set ==> 0001309034 == 068
+%11 Jun 2018 10:41:38  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 10:41:39  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 10:42:01  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 10:42:01  INFO-No name fetched ==> [2] Name enquiry failed.. == BE608008267
+%11 Jun 2018 10:42:01  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:42:01  INFO-Merge RiaDtlTbl Insert statement completed  180508091530
+%11 Jun 2018 10:42:01  INFO-Commit RiaDtlTbl Insert statement completed  180508091530
+%11 Jun 2018 10:42:01  INFO-UpdateProcessed flag ==> N ==> BE608008267
+%11 Jun 2018 10:42:01  INFO-Pick each record to validate -- US676701167 -- 0002381017 -- NGN -- 50410.00
+%11 Jun 2018 10:42:01  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:42:01  INFO-Order currency and order no -- NGN -- US676701167
+%11 Jun 2018 10:42:01  INFO-Validate NEFT Currency
+%11 Jun 2018 10:42:01  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:42:01  INFO-Order currency -- NGN
+%11 Jun 2018 10:42:01  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:42:01  INFO-Check if account number is Nuban Complaint -- 0002381017 -- US676701167 -- 068150001
+%11 Jun 2018 10:42:01  INFO-Bank Code is -- 0002381017 -- 068
+%11 Jun 2018 10:42:01  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0002381017','068') from dual
+%11 Jun 2018 10:42:01  INFO-Account is NUBAN Compliant - 0002381017 -- Y|0002381017
+%11 Jun 2018 10:42:01  INFO-Validate Account Name through FIP == AVWARA == OVIE  HENRY
+%11 Jun 2018 10:42:01  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 10:42:01  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 10:42:01  INFO-Name enquiry set ==> 0002381017 == 068
+%11 Jun 2018 10:42:01  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 10:42:01  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 10:42:23  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 10:42:23  INFO-No name fetched ==> [2] Name enquiry failed.. == US676701167
+%11 Jun 2018 10:42:23  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:42:23  INFO-Merge RiaDtlTbl Insert statement completed  180511204530
+%11 Jun 2018 10:42:23  INFO-Commit RiaDtlTbl Insert statement completed  180511204530
+%11 Jun 2018 10:42:23  INFO-UpdateProcessed flag ==> N ==> US676701167
+%11 Jun 2018 10:42:23  INFO-Pick each record to validate -- DE507520867 -- 0230134560 -- NGN -- 100000.00
+%11 Jun 2018 10:42:23  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:42:23  INFO-Order currency and order no -- NGN -- DE507520867
+%11 Jun 2018 10:42:23  INFO-Validate NEFT Currency
+%11 Jun 2018 10:42:23  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:42:23  INFO-Order currency -- NGN
+%11 Jun 2018 10:42:23  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:42:23  INFO-Check if account number is Nuban Complaint -- 0230134560 -- DE507520867 -- 035150000
+%11 Jun 2018 10:42:23  INFO-Bank Code is -- 0230134560 -- 035
+%11 Jun 2018 10:42:23  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0230134560','035') from dual
+%11 Jun 2018 10:42:23  INFO-Account is NUBAN Compliant - 0230134560 -- Y|0230134560
+%11 Jun 2018 10:42:23  INFO-Validate Account Name through FIP == Ogbemuda == Ogierihie
+%11 Jun 2018 10:42:23  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 10:42:23  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 10:42:23  INFO-Name enquiry set ==> 0230134560 == 035
+%11 Jun 2018 10:42:23  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 10:42:23  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 10:42:45  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 10:42:45  INFO-No name fetched ==> [2] Name enquiry failed.. == DE507520867
+%11 Jun 2018 10:42:45  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:42:45  INFO-Merge RiaDtlTbl Insert statement completed  180502153030
+%11 Jun 2018 10:42:45  INFO-Commit RiaDtlTbl Insert statement completed  180502153030
+%11 Jun 2018 10:42:45  INFO-UpdateProcessed flag ==> N ==> DE507520867
+%11 Jun 2018 10:42:45  INFO-Pick each record to validate -- UK491770267 -- 3047943293 -- NGN -- 10000.00
+%11 Jun 2018 10:42:45  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:42:45  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3047943293'
+%11 Jun 2018 10:42:45  INFO-Account exist in Finacle -- AKINGBADE EMMANUEL OLUMIDE --   -- N -- NGN
+%11 Jun 2018 10:42:45  INFO-Start account name validation ==> 
+%11 Jun 2018 10:42:45  INFO-Beneficiary First name 2 exist in Account Name ==> AKINGBADE == AKINGBADE EMMANUEL OLUMIDE == UK491770267
+%11 Jun 2018 10:42:45  INFO-UpdateProcessed flag ==> Y ==> UK491770267
+%11 Jun 2018 10:42:45  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:42:45  INFO-Merge RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-Commit RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-Processed flag updated to successful -- UK491770267
+%11 Jun 2018 10:42:45  INFO-Pick each record to validate -- ES491771267 -- 3021573856 -- NGN -- 20097.20
+%11 Jun 2018 10:42:45  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:42:45  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3021573856'
+%11 Jun 2018 10:42:45  INFO-Account exist in Finacle -- NNAMEZIE OGECHI RITA --   -- N -- NGN
+%11 Jun 2018 10:42:45  INFO-Start account name validation ==> 
+%11 Jun 2018 10:42:45  INFO-Beneficiary Last name exist in Account Name ==> NNAMEZIE == NNAMEZIE OGECHI RITA == ES491771267
+%11 Jun 2018 10:42:45  INFO-UpdateProcessed flag ==> Y ==> ES491771267
+%11 Jun 2018 10:42:45  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:42:45  INFO-Merge RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-Commit RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-Processed flag updated to successful -- ES491771267
+%11 Jun 2018 10:42:45  INFO-Pick each record to validate -- IT491817167 -- 3004775554 -- NGN -- 20000.00
+%11 Jun 2018 10:42:45  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:42:45  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3004775554'
+%11 Jun 2018 10:42:45  INFO-Account exist in Finacle -- AIRHUOYUWA CLARA MRS --   -- N -- NGN
+%11 Jun 2018 10:42:45  INFO-Start account name validation ==> 
+%11 Jun 2018 10:42:45  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:42:45  INFO-Merge RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-Commit RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-UpdateProcessed flag ==> Y ==> IT491817167
+%11 Jun 2018 10:42:45  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:42:45  INFO-Merge RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-Commit RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-Processed flag updated to successful -- IT491817167
+%11 Jun 2018 10:42:45  INFO-Pick each record to validate -- US491852567 -- 3089666019 -- NGN -- 71355.00
+%11 Jun 2018 10:42:45  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:42:45  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3089666019'
+%11 Jun 2018 10:42:45  INFO-Account exist in Finacle -- AKINYEMIJU TUNJI OLUWASEUN --   -- N -- NGN
+%11 Jun 2018 10:42:45  INFO-Start account name validation ==> 
+%11 Jun 2018 10:42:45  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:42:45  INFO-Merge RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-Commit RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-UpdateProcessed flag ==> Y ==> US491852567
+%11 Jun 2018 10:42:45  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:42:45  INFO-Merge RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-Commit RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:45  INFO-Processed flag updated to successful -- US491852567
+%11 Jun 2018 10:42:45  INFO-Get record for posting for FBN --
+%11 Jun 2018 10:42:45  INFO-Number of records gotten for processing -- 2 -- 2018-06-11 10:42:45.865
+%11 Jun 2018 10:42:45  INFO-Order No -- UK491770267
+%11 Jun 2018 10:42:45  INFO-transaction Currency -- NGN
+%11 Jun 2018 10:42:45  INFO-transaction Amount -- 10000.00
+%11 Jun 2018 10:42:45  INFO-transaction Reason -- Family Assistance
+%11 Jun 2018 10:42:45  INFO-Credit Account -- 3047943293
+%11 Jun 2018 10:42:45  INFO-Payment Reference -- null
+%11 Jun 2018 10:42:45  INFO-Tran Pin -- 12847640315
+%11 Jun 2018 10:42:45  INFO-Received Date -- Mon Jun 11 00:00:00 WAT 2018
+%11 Jun 2018 10:42:45  INFO-Senders Name = Oluwatosin Shobawale  
+%11 Jun 2018 10:42:45  INFO-Final Credit account -- 3047943293 -- Y
+%11 Jun 2018 10:42:45  INFO-Suspense account to debit -- 99919700002601
+%11 Jun 2018 10:42:45  INFO-Time different maximum ==  100
+%11 Jun 2018 10:42:45  INFO-sysdate: 2018-06-11 10:42:45.0
+%11 Jun 2018 10:42:45  INFO-Difference itself -- 38565000
+%11 Jun 2018 10:42:45  INFO-diffHours: 10
+%11 Jun 2018 10:42:45  INFO-hoursElapsed = false
+%11 Jun 2018 10:42:45  INFO-Post Transaction -- Mon Jun 11 09:15:33 WAT 2018 -- 3047943293 -- RIA/12847640315/Oluwatosin Shobawale   -- 99919700002601 -- 10000.00 -- UK491770267
+%11 Jun 2018 10:42:45  INFO-Start to post transaction -- Mon Jun 11 10:42:45 WAT 2018
+%11 Jun 2018 10:42:45  INFO-Before Send
+%11 Jun 2018 10:42:45  INFO-After Send
+%11 Jun 2018 10:42:47  INFO-Response -- 000 -- UK491770267
+%11 Jun 2018 10:42:47  INFO-End of process record in C24 -- UK491770267
+%11 Jun 2018 10:42:47  INFO-Response from Connect24 -- 000
+%11 Jun 2018 10:42:47  INFO-Response description of the response gotten
+%11 Jun 2018 10:42:47  INFO-Get Tran ID Class -- 12847640315 -- 3047943293
+%11 Jun 2018 10:42:47  INFO-SELECT TRAN_ID FROM TBAADM.DTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3047943293' ) AND r.TRAN_RMKS='12847640315' AND r.PART_TRAN_TYPE='C' UNION SELECT TRAN_ID FROM TBAADM.HTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3047943293' ) AND r.TRAN_RMKS='12847640315' AND r.PART_TRAN_TYPE='C'
+%11 Jun 2018 10:42:47  INFO-TranId of transaction --S62900726
+%11 Jun 2018 10:42:47  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:42:47  INFO-Merge RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:47  INFO-Commit RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:47  INFO-Order No -- ES491771267
+%11 Jun 2018 10:42:47  INFO-transaction Currency -- NGN
+%11 Jun 2018 10:42:47  INFO-transaction Amount -- 20097.20
+%11 Jun 2018 10:42:47  INFO-transaction Reason -- Ayuda familiar
+%11 Jun 2018 10:42:47  INFO-Credit Account -- 3021573856
+%11 Jun 2018 10:42:47  INFO-Payment Reference -- null
+%11 Jun 2018 10:42:47  INFO-Tran Pin -- 12847660712
+%11 Jun 2018 10:42:47  INFO-Received Date -- Mon Jun 11 12:00:32 WAT 2018
+%11 Jun 2018 10:42:47  INFO-Senders Name = JOSHUA AMAJO  
+%11 Jun 2018 10:42:47  INFO-Final Credit account -- 3021573856 -- Y
+%11 Jun 2018 10:42:47  INFO-Suspense account to debit -- 99919700002601
+%11 Jun 2018 10:42:47  INFO-Time different maximum ==  100
+%11 Jun 2018 10:42:47  INFO-sysdate: 2018-06-11 10:42:47.0
+%11 Jun 2018 10:42:47  INFO-Difference itself -- -4665000
+%11 Jun 2018 10:42:47  INFO-diffHours: -1
+%11 Jun 2018 10:42:47  INFO-hoursElapsed = false
+%11 Jun 2018 10:42:47  INFO-Post Transaction -- Mon Jun 11 09:15:33 WAT 2018 -- 3021573856 -- RIA/12847660712/JOSHUA AMAJO   -- 99919700002601 -- 20097.20 -- ES491771267
+%11 Jun 2018 10:42:47  INFO-Start to post transaction -- Mon Jun 11 10:42:47 WAT 2018
+%11 Jun 2018 10:42:47  INFO-Before Send
+%11 Jun 2018 10:42:47  INFO-After Send
+%11 Jun 2018 10:42:48  INFO-Response -- 000 -- ES491771267
+%11 Jun 2018 10:42:48  INFO-End of process record in C24 -- ES491771267
+%11 Jun 2018 10:42:48  INFO-Response from Connect24 -- 000
+%11 Jun 2018 10:42:48  INFO-Response description of the response gotten
+%11 Jun 2018 10:42:48  INFO-Get Tran ID Class -- 12847660712 -- 3021573856
+%11 Jun 2018 10:42:48  INFO-SELECT TRAN_ID FROM TBAADM.DTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3021573856' ) AND r.TRAN_RMKS='12847660712' AND r.PART_TRAN_TYPE='C' UNION SELECT TRAN_ID FROM TBAADM.HTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3021573856' ) AND r.TRAN_RMKS='12847660712' AND r.PART_TRAN_TYPE='C'
+%11 Jun 2018 10:42:48  INFO-TranId of transaction --S62900727
+%11 Jun 2018 10:42:48  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:42:48  INFO-Merge RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:48  INFO-Commit RiaDtlTbl Insert statement completed  180501141530
+%11 Jun 2018 10:42:48  INFO-Get all pending Neft transactions
+%11 Jun 2018 10:42:48  INFO-How many records in the list neftTransactions class -- 0
+%11 Jun 2018 10:42:48  INFO-Enter Get Status of order after processing --
+%11 Jun 2018 10:42:48  INFO-Request sent to RIA -- <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ces="CES.Services.FXGlobal">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ces:InputOrderStatusNotices>
+           <ces:xmlDoc>
+<Root xmlns:ns2="CES.Services.FXGlobal">
+  <PayingCorrespID>6737914</PayingCorrespID>
+  <InputLayoutVersion>1.1</InputLayoutVersion>
+  <OrderStatusNotices>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119570066</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119694466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012001530</PCOrderNo>
+<SCOrderNo>US119760966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012003030</PCOrderNo>
+<SCOrderNo>US118937466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012151530</PCOrderNo>
+<SCOrderNo>IE124108166</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012173030</PCOrderNo>
+<SCOrderNo>UK126073966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171013021530</PCOrderNo>
+<SCOrderNo>US903133182</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005000030</PCOrderNo>
+<SCOrderNo>CA2131718165</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005001530</PCOrderNo>
+<SCOrderNo>CA2131811865</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131949665</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDNo>A0000</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>CA2131972065</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDNo>23212</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131996465</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2132018365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005010030</PCOrderNo>
+<SCOrderNo>US2132234765</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891197982</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891205982</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005013030</PCOrderNo>
+<SCOrderNo>US2132473365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDNo>08022969588</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>AU2133933965</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>UK2133947665</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005113030</PCOrderNo>
+<SCOrderNo>DE2134634565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005134530</PCOrderNo>
+<SCOrderNo>US891638782</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005160030</PCOrderNo>
+<SCOrderNo>UK2137438165</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005223030</PCOrderNo>
+<SCOrderNo>US2142775365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005231530</PCOrderNo>
+<SCOrderNo>US2143245565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501000030</PCOrderNo>
+<SCOrderNo>US487143067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US485802067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>CA486456967</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US487533167</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487228567</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487489367</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488136267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488177767</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508204530</PCOrderNo>
+<SCOrderNo>US619017867</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508234530</PCOrderNo>
+<SCOrderNo>US621689267</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180509000030</PCOrderNo>
+<SCOrderNo>US622252767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508163030</PCOrderNo>
+<SCOrderNo>UK613053767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507160030</PCOrderNo>
+<SCOrderNo>DE592814167</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507003030</PCOrderNo>
+<SCOrderNo>US585163767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507093030</PCOrderNo>
+<SCOrderNo>BE587401767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529173030</PCOrderNo>
+<SCOrderNo>US893548967</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529183030</PCOrderNo>
+<SCOrderNo>US943952667</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180515204530</PCOrderNo>
+<SCOrderNo>US744718767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>UK491770267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>ES491771267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>IT491817167</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>US491852567</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+  </OrderStatusNotices>
+</Root>
+         </ces:xmlDoc>
+      </ces:InputOrderStatusNotices>
+   </soapenv:Body>
+</soapenv:Envelope>
+%11 Jun 2018 10:42:48  INFO-System date for insert RiaRequest -- Mon Jun 11 10:42:48 WAT 20189041964553328604275
+%11 Jun 2018 10:42:48  INFO-Final XML passed for order status received  -- <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ces="CES.Services.FXGlobal">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ces:InputOrderStatusNotices>
+           <ces:xmlDoc>
+<Root xmlns:ns2="CES.Services.FXGlobal">
+  <PayingCorrespID>6737914</PayingCorrespID>
+  <InputLayoutVersion>1.1</InputLayoutVersion>
+  <OrderStatusNotices>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119570066</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119694466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012001530</PCOrderNo>
+<SCOrderNo>US119760966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012003030</PCOrderNo>
+<SCOrderNo>US118937466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012151530</PCOrderNo>
+<SCOrderNo>IE124108166</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012173030</PCOrderNo>
+<SCOrderNo>UK126073966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171013021530</PCOrderNo>
+<SCOrderNo>US903133182</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005000030</PCOrderNo>
+<SCOrderNo>CA2131718165</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005001530</PCOrderNo>
+<SCOrderNo>CA2131811865</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131949665</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDNo>A0000</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>CA2131972065</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDNo>23212</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131996465</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2132018365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005010030</PCOrderNo>
+<SCOrderNo>US2132234765</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891197982</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891205982</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005013030</PCOrderNo>
+<SCOrderNo>US2132473365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDNo>08022969588</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>AU2133933965</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>UK2133947665</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005113030</PCOrderNo>
+<SCOrderNo>DE2134634565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005134530</PCOrderNo>
+<SCOrderNo>US891638782</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005160030</PCOrderNo>
+<SCOrderNo>UK2137438165</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005223030</PCOrderNo>
+<SCOrderNo>US2142775365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005231530</PCOrderNo>
+<SCOrderNo>US2143245565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501000030</PCOrderNo>
+<SCOrderNo>US487143067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US485802067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>CA486456967</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US487533167</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487228567</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487489367</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488136267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488177767</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508204530</PCOrderNo>
+<SCOrderNo>US619017867</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508234530</PCOrderNo>
+<SCOrderNo>US621689267</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180509000030</PCOrderNo>
+<SCOrderNo>US622252767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508163030</PCOrderNo>
+<SCOrderNo>UK613053767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507160030</PCOrderNo>
+<SCOrderNo>DE592814167</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507003030</PCOrderNo>
+<SCOrderNo>US585163767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507093030</PCOrderNo>
+<SCOrderNo>BE587401767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529173030</PCOrderNo>
+<SCOrderNo>US893548967</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529183030</PCOrderNo>
+<SCOrderNo>US943952667</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180515204530</PCOrderNo>
+<SCOrderNo>US744718767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>UK491770267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>ES491771267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>IT491817167</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>US491852567</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+  </OrderStatusNotices>
+</Root>
+         </ces:xmlDoc>
+      </ces:InputOrderStatusNotices>
+   </soapenv:Body>
+</soapenv:Envelope> EndpointUrl -- http://stagingfxglobalwebsvcnocert.riaenvia.net:9771/FXGlobalSending.svc/Binding_Basic_NoCert EndpointTimeout --1000000
+%11 Jun 2018 10:42:48  INFO-Size of records sent -- 46
+%11 Jun 2018 10:42:48  INFO-sending http request with EndPoint URL : http://stagingfxglobalwebsvcnocert.riaenvia.net:9771/FXGlobalSending.svc/Binding_Basic_NoCert
+%11 Jun 2018 10:42:48  INFO-sending formated message 
+ : <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ces="CES.Services.FXGlobal">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ces:InputOrderStatusNotices>
+           <ces:xmlDoc>
+<Root xmlns:ns2="CES.Services.FXGlobal">
+  <PayingCorrespID>6737914</PayingCorrespID>
+  <InputLayoutVersion>1.1</InputLayoutVersion>
+  <OrderStatusNotices>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119570066</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012000030</PCOrderNo>
+<SCOrderNo>US119694466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012001530</PCOrderNo>
+<SCOrderNo>US119760966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012003030</PCOrderNo>
+<SCOrderNo>US118937466</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012151530</PCOrderNo>
+<SCOrderNo>IE124108166</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171012173030</PCOrderNo>
+<SCOrderNo>UK126073966</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171013021530</PCOrderNo>
+<SCOrderNo>US903133182</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005000030</PCOrderNo>
+<SCOrderNo>CA2131718165</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005001530</PCOrderNo>
+<SCOrderNo>CA2131811865</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131949665</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDNo>A0000</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>CA2131972065</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDNo>23212</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2131996465</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005003030</PCOrderNo>
+<SCOrderNo>US2132018365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005010030</PCOrderNo>
+<SCOrderNo>US2132234765</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891197982</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005011530</PCOrderNo>
+<SCOrderNo>US891205982</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005013030</PCOrderNo>
+<SCOrderNo>US2132473365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDNo>08022969588</BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>AU2133933965</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005100030</PCOrderNo>
+<SCOrderNo>UK2133947665</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005113030</PCOrderNo>
+<SCOrderNo>DE2134634565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005134530</PCOrderNo>
+<SCOrderNo>US891638782</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005160030</PCOrderNo>
+<SCOrderNo>UK2137438165</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005223030</PCOrderNo>
+<SCOrderNo>US2142775365</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>171005231530</PCOrderNo>
+<SCOrderNo>US2143245565</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Account Name Enquiry Failed</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501000030</PCOrderNo>
+<SCOrderNo>US487143067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US485802067</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>CA486456967</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501001530</PCOrderNo>
+<SCOrderNo>US487533167</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487228567</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US487489367</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488136267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501010030</PCOrderNo>
+<SCOrderNo>US488177767</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508204530</PCOrderNo>
+<SCOrderNo>US619017867</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508234530</PCOrderNo>
+<SCOrderNo>US621689267</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180509000030</PCOrderNo>
+<SCOrderNo>US622252767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180508163030</PCOrderNo>
+<SCOrderNo>UK613053767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507160030</PCOrderNo>
+<SCOrderNo>DE592814167</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507003030</PCOrderNo>
+<SCOrderNo>US585163767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180507093030</PCOrderNo>
+<SCOrderNo>BE587401767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Account Does Not Exist</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529173030</PCOrderNo>
+<SCOrderNo>US893548967</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180529183030</PCOrderNo>
+<SCOrderNo>US943952667</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180515204530</PCOrderNo>
+<SCOrderNo>US744718767</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Bank Account Number is not NUBAN Compliant</Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>UK491770267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>ES491771267</SCOrderNo>
+<OrderStatus>PAID</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<BenIDType> </BenIDType>
+<BenIDNo> </BenIDNo>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>IT491817167</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+    <OrderStatusNotice>
+<PCOrderNo>180501141530</PCOrderNo>
+<SCOrderNo>US491852567</SCOrderNo>
+<OrderStatus>REJECTED</OrderStatus>
+<StatusDate>20180611</StatusDate>
+<StatusTime>104248</StatusTime>
+<Reason>Beneficiary Name does not match with account Name </Reason>
+ </OrderStatusNotice>
+  </OrderStatusNotices>
+</Root>
+         </ces:xmlDoc>
+      </ces:InputOrderStatusNotices>
+   </soapenv:Body>
+</soapenv:Envelope>
+%11 Jun 2018 10:42:48  INFO-Local Variables declared
+%11 Jun 2018 10:42:48  INFO-opened http connection
+%11 Jun 2018 10:43:09  INFO-closed httpUrlConn
+%11 Jun 2018 10:43:09  ERROR-Error occured in sending status update to RIA system -- java.net.ConnectException: Connection timed out: connect
+%11 Jun 2018 10:43:09  INFO-Status not updated for records !!!!!
+%11 Jun 2018 10:55:33  INFO-Start Process of Transactions !!!
+%11 Jun 2018 10:55:33  INFO-Start loading properties file
+%11 Jun 2018 10:55:33  INFO-Neft Currency NGN
+%11 Jun 2018 10:55:33  INFO-Validate records first -- 
+%11 Jun 2018 10:55:33  INFO-Enter Get record to Validate Generally
+%11 Jun 2018 10:55:38  INFO-Number of records to be validated -- 4
+%11 Jun 2018 10:55:38  INFO-How Many records here 4
+%11 Jun 2018 10:55:38  INFO-Pick each record to validate -- DE592814167 -- 3104908902 -- NGN -- 842360.00
+%11 Jun 2018 10:55:38  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 10:55:38  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3104908902'
+%11 Jun 2018 10:55:38  INFO-Account exist in Finacle -- IDOWU MOROTI AYO -- D -- N -- NGN
+%11 Jun 2018 10:55:38  INFO-Connection made to database -- oracle.jdbc.driver.OracleConnection@4e1a70b8
+%11 Jun 2018 10:55:38  INFO-Limit Validation Query --- select DAILY_DR_LIMIT, TRAN_CR_LIMIT, MIN_ACCT_BAL,MAX_ACCT_BAL from custom.productslimit where schm_code='SA340' and DEL_FLG='N' and BANK_ID='01'
+%11 Jun 2018 10:55:38  INFO-Value of gLimit -- com.fbn.db.jpa.GetLimitValue@4883d37a
+%11 Jun 2018 10:55:38  ERROR-Error occurred in get Limits for account -- null
+%11 Jun 2018 10:55:38  INFO-UpdateProcessed flag ==> N ==> DE592814167
+%11 Jun 2018 10:55:38  INFO-Pick each record to validate -- BE608008267 -- 0001309034 -- NGN -- 19601.00
+%11 Jun 2018 10:55:38  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:55:38  INFO-Order currency and order no -- NGN -- BE608008267
+%11 Jun 2018 10:55:38  INFO-Validate NEFT Currency
+%11 Jun 2018 10:55:38  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:55:38  INFO-Order currency -- NGN
+%11 Jun 2018 10:55:38  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:55:38  INFO-Check if account number is Nuban Complaint -- 0001309034 -- BE608008267 -- 068150001
+%11 Jun 2018 10:55:38  INFO-Bank Code is -- 0001309034 -- 068
+%11 Jun 2018 10:55:38  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0001309034','068') from dual
+%11 Jun 2018 10:55:39  INFO-Account is NUBAN Compliant - 0001309034 -- Y|0001309034
+%11 Jun 2018 10:55:39  INFO-Validate Account Name through FIP == GODWIN == OMEH
+%11 Jun 2018 10:55:39  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 10:55:39  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 10:55:39  INFO-Name enquiry set ==> 0001309034 == 068
+%11 Jun 2018 10:55:39  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 10:55:39  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 10:56:01  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 10:56:01  INFO-No name fetched ==> [2] Name enquiry failed.. == BE608008267
+%11 Jun 2018 10:56:01  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:56:01  INFO-Merge RiaDtlTbl Insert statement completed  180508091530
+%11 Jun 2018 10:56:01  INFO-Commit RiaDtlTbl Insert statement completed  180508091530
+%11 Jun 2018 10:56:01  INFO-UpdateProcessed flag ==> N ==> BE608008267
+%11 Jun 2018 10:56:01  INFO-Pick each record to validate -- US676701167 -- 0002381017 -- NGN -- 50410.00
+%11 Jun 2018 10:56:01  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:56:01  INFO-Order currency and order no -- NGN -- US676701167
+%11 Jun 2018 10:56:01  INFO-Validate NEFT Currency
+%11 Jun 2018 10:56:01  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:56:01  INFO-Order currency -- NGN
+%11 Jun 2018 10:56:01  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:56:01  INFO-Check if account number is Nuban Complaint -- 0002381017 -- US676701167 -- 068150001
+%11 Jun 2018 10:56:01  INFO-Bank Code is -- 0002381017 -- 068
+%11 Jun 2018 10:56:01  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0002381017','068') from dual
+%11 Jun 2018 10:56:01  INFO-Account is NUBAN Compliant - 0002381017 -- Y|0002381017
+%11 Jun 2018 10:56:01  INFO-Validate Account Name through FIP == AVWARA == OVIE  HENRY
+%11 Jun 2018 10:56:01  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 10:56:01  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 10:56:01  INFO-Name enquiry set ==> 0002381017 == 068
+%11 Jun 2018 10:56:01  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 10:56:01  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 10:56:23  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 10:56:23  INFO-No name fetched ==> [2] Name enquiry failed.. == US676701167
+%11 Jun 2018 10:56:23  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:56:23  INFO-Merge RiaDtlTbl Insert statement completed  180511204530
+%11 Jun 2018 10:56:23  INFO-Commit RiaDtlTbl Insert statement completed  180511204530
+%11 Jun 2018 10:56:23  INFO-UpdateProcessed flag ==> N ==> US676701167
+%11 Jun 2018 10:56:23  INFO-Pick each record to validate -- DE507520867 -- 0230134560 -- NGN -- 100000.00
+%11 Jun 2018 10:56:23  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 10:56:23  INFO-Order currency and order no -- NGN -- DE507520867
+%11 Jun 2018 10:56:23  INFO-Validate NEFT Currency
+%11 Jun 2018 10:56:23  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 10:56:23  INFO-Order currency -- NGN
+%11 Jun 2018 10:56:23  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 10:56:23  INFO-Check if account number is Nuban Complaint -- 0230134560 -- DE507520867 -- 035150000
+%11 Jun 2018 10:56:23  INFO-Bank Code is -- 0230134560 -- 035
+%11 Jun 2018 10:56:23  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0230134560','035') from dual
+%11 Jun 2018 10:56:23  INFO-Account is NUBAN Compliant - 0230134560 -- Y|0230134560
+%11 Jun 2018 10:56:23  INFO-Validate Account Name through FIP == Ogbemuda == Ogierihie
+%11 Jun 2018 10:56:23  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 10:56:23  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 10:56:23  INFO-Name enquiry set ==> 0230134560 == 035
+%11 Jun 2018 10:56:23  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 10:56:24  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 10:56:45  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 10:56:45  INFO-No name fetched ==> [2] Name enquiry failed.. == DE507520867
+%11 Jun 2018 10:56:45  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 10:56:45  INFO-Merge RiaDtlTbl Insert statement completed  180502153030
+%11 Jun 2018 10:56:45  INFO-Commit RiaDtlTbl Insert statement completed  180502153030
+%11 Jun 2018 10:56:45  INFO-UpdateProcessed flag ==> N ==> DE507520867
+%11 Jun 2018 10:56:45  INFO-Get record for posting for FBN --
+%11 Jun 2018 10:56:46  INFO-Number of records gotten for processing -- 0 -- 2018-06-11 10:56:46.442
+%11 Jun 2018 10:56:46  INFO-No record to post -- 2018-06-11 10:56:46.442
+%11 Jun 2018 11:05:06  INFO-Start Process of Transactions !!!
+%11 Jun 2018 11:05:06  INFO-Start loading properties file
+%11 Jun 2018 11:05:06  INFO-Neft Currency NGN
+%11 Jun 2018 11:05:06  INFO-Validate records first -- 
+%11 Jun 2018 11:05:06  INFO-Enter Get record to Validate Generally
+%11 Jun 2018 11:05:08  INFO-Number of records to be validated -- 6
+%11 Jun 2018 11:05:08  INFO-How Many records here 6
+%11 Jun 2018 11:05:08  INFO-Pick each record to validate -- US619017867 -- 3104909277 -- NGN -- 8875.00
+%11 Jun 2018 11:05:09  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 11:05:09  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3104909277'
+%11 Jun 2018 11:05:09  INFO-Account exist in Finacle -- PANKAJ PRANIT -- D -- N -- NGN
+%11 Jun 2018 11:05:09  INFO-Connection made to database -- oracle.jdbc.driver.OracleConnection@4edc024a
+%11 Jun 2018 11:05:09  INFO-Limit Validation Query --- select DAILY_DR_LIMIT, TRAN_CR_LIMIT, MIN_ACCT_BAL,MAX_ACCT_BAL from custom.productslimit where schm_code='SA342' and DEL_FLG='N' and BANK_ID='01'
+%11 Jun 2018 11:05:09  INFO-Value of rs -- oracle.jdbc.driver.OracleResultSetImpl@29de6817 --- 50000
+%11 Jun 2018 11:05:09  INFO-Value of gLimit -- com.fbn.db.jpa.GetLimitValue@4883d37a
+%11 Jun 2018 11:05:09  INFO-Start account name validation ==> 
+%11 Jun 2018 11:05:09  INFO-Beneficiary First name exist in Account Name ==> PANKAJ == PANKAJ PRANIT == US619017867
+%11 Jun 2018 11:05:09  INFO-UpdateProcessed flag ==> Y ==> US619017867
+%11 Jun 2018 11:05:09  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:05:09  INFO-Merge RiaDtlTbl Insert statement completed  180508204530
+%11 Jun 2018 11:05:09  INFO-Commit RiaDtlTbl Insert statement completed  180508204530
+%11 Jun 2018 11:05:09  INFO-Processed flag updated to successful -- US619017867
+%11 Jun 2018 11:05:09  INFO-Pick each record to validate -- DE592814167 -- 3104916981 -- NGN -- 842360.00
+%11 Jun 2018 11:05:09  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 11:05:09  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3104916981'
+%11 Jun 2018 11:05:09  INFO-Account exist in Finacle -- HENDERSON MICHAEL --   -- N -- NGN
+%11 Jun 2018 11:05:09  INFO-Connection made to database -- oracle.jdbc.driver.OracleConnection@1e4bb369
+%11 Jun 2018 11:05:09  INFO-Limit Validation Query --- select DAILY_DR_LIMIT, TRAN_CR_LIMIT, MIN_ACCT_BAL,MAX_ACCT_BAL from custom.productslimit where schm_code='SA321' and DEL_FLG='N' and BANK_ID='01'
+%11 Jun 2018 11:05:09  INFO-Value of rs -- oracle.jdbc.driver.OracleResultSetImpl@39abdac9 --- 50000
+%11 Jun 2018 11:05:09  INFO-Value of gLimit -- com.fbn.db.jpa.GetLimitValue@41a8dfb3
+%11 Jun 2018 11:05:09  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:05:09  INFO-Merge RiaDtlTbl Insert statement completed  180507160030
+%11 Jun 2018 11:05:09  INFO-Commit RiaDtlTbl Insert statement completed  180507160030
+%11 Jun 2018 11:05:09  INFO-UpdateProcessed flag ==> Y ==> DE592814167
+%11 Jun 2018 11:05:09  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:05:09  INFO-Merge RiaDtlTbl Insert statement completed  180507160030
+%11 Jun 2018 11:05:09  INFO-Commit RiaDtlTbl Insert statement completed  180507160030
+%11 Jun 2018 11:05:09  INFO-Processed flag updated to successful -- DE592814167
+%11 Jun 2018 11:05:09  INFO-Pick each record to validate -- US585163767 -- 3104918181 -- NGN -- 71000.00
+%11 Jun 2018 11:05:09  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 11:05:09  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='3104918181'
+%11 Jun 2018 11:05:09  INFO-Account exist in Finacle -- HENDERSON MICHAEL --   -- N -- NGN
+%11 Jun 2018 11:05:09  INFO-Connection made to database -- oracle.jdbc.driver.OracleConnection@1c04298e
+%11 Jun 2018 11:05:09  INFO-Limit Validation Query --- select DAILY_DR_LIMIT, TRAN_CR_LIMIT, MIN_ACCT_BAL,MAX_ACCT_BAL from custom.productslimit where schm_code='SA321' and DEL_FLG='N' and BANK_ID='01'
+%11 Jun 2018 11:05:09  INFO-Value of rs -- oracle.jdbc.driver.OracleResultSetImpl@71b8b3bb --- 50000
+%11 Jun 2018 11:05:09  INFO-Value of gLimit -- com.fbn.db.jpa.GetLimitValue@151ff451
+%11 Jun 2018 11:05:09  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:05:09  INFO-Merge RiaDtlTbl Insert statement completed  180507003030
+%11 Jun 2018 11:05:09  INFO-Commit RiaDtlTbl Insert statement completed  180507003030
+%11 Jun 2018 11:05:09  INFO-UpdateProcessed flag ==> Y ==> US585163767
+%11 Jun 2018 11:05:09  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:05:09  INFO-Merge RiaDtlTbl Insert statement completed  180507003030
+%11 Jun 2018 11:05:09  INFO-Commit RiaDtlTbl Insert statement completed  180507003030
+%11 Jun 2018 11:05:09  INFO-Processed flag updated to successful -- US585163767
+%11 Jun 2018 11:05:09  INFO-Pick each record to validate -- BE608008267 -- 0001309034 -- NGN -- 19601.00
+%11 Jun 2018 11:05:09  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 11:05:09  INFO-Order currency and order no -- NGN -- BE608008267
+%11 Jun 2018 11:05:09  INFO-Validate NEFT Currency
+%11 Jun 2018 11:05:09  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 11:05:09  INFO-Order currency -- NGN
+%11 Jun 2018 11:05:09  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 11:05:09  INFO-Check if account number is Nuban Complaint -- 0001309034 -- BE608008267 -- 068150001
+%11 Jun 2018 11:05:09  INFO-Bank Code is -- 0001309034 -- 068
+%11 Jun 2018 11:05:09  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0001309034','068') from dual
+%11 Jun 2018 11:05:09  INFO-Account is NUBAN Compliant - 0001309034 -- Y|0001309034
+%11 Jun 2018 11:05:09  INFO-Validate Account Name through FIP == GODWIN == OMEH
+%11 Jun 2018 11:05:09  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 11:05:09  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 11:05:09  INFO-Name enquiry set ==> 0001309034 == 068
+%11 Jun 2018 11:05:09  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 11:05:10  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 11:05:32  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 11:05:32  INFO-No name fetched ==> [2] Name enquiry failed.. == BE608008267
+%11 Jun 2018 11:05:32  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:05:32  INFO-Merge RiaDtlTbl Insert statement completed  180508091530
+%11 Jun 2018 11:05:32  INFO-Commit RiaDtlTbl Insert statement completed  180508091530
+%11 Jun 2018 11:05:32  INFO-UpdateProcessed flag ==> Y ==> BE608008267
+%11 Jun 2018 11:05:32  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:05:32  INFO-Merge RiaDtlTbl Insert statement completed  180508091530
+%11 Jun 2018 11:05:32  INFO-Commit RiaDtlTbl Insert statement completed  180508091530
+%11 Jun 2018 11:05:32  INFO-Processed flag updated to successful -- BE608008267
+%11 Jun 2018 11:05:32  INFO-Pick each record to validate -- US676701167 -- 0002381017 -- NGN -- 50410.00
+%11 Jun 2018 11:05:32  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 11:05:32  INFO-Order currency and order no -- NGN -- US676701167
+%11 Jun 2018 11:05:32  INFO-Validate NEFT Currency
+%11 Jun 2018 11:05:32  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 11:05:32  INFO-Order currency -- NGN
+%11 Jun 2018 11:05:32  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 11:05:32  INFO-Check if account number is Nuban Complaint -- 0002381017 -- US676701167 -- 068150001
+%11 Jun 2018 11:05:32  INFO-Bank Code is -- 0002381017 -- 068
+%11 Jun 2018 11:05:32  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0002381017','068') from dual
+%11 Jun 2018 11:05:32  INFO-Account is NUBAN Compliant - 0002381017 -- Y|0002381017
+%11 Jun 2018 11:05:32  INFO-Validate Account Name through FIP == AVWARA == OVIE  HENRY
+%11 Jun 2018 11:05:32  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 11:05:32  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 11:05:32  INFO-Name enquiry set ==> 0002381017 == 068
+%11 Jun 2018 11:05:32  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 11:05:32  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 11:05:54  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 11:05:54  INFO-No name fetched ==> [2] Name enquiry failed.. == US676701167
+%11 Jun 2018 11:05:54  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:05:54  INFO-Merge RiaDtlTbl Insert statement completed  180511204530
+%11 Jun 2018 11:05:55  INFO-Commit RiaDtlTbl Insert statement completed  180511204530
+%11 Jun 2018 11:05:55  INFO-UpdateProcessed flag ==> Y ==> US676701167
+%11 Jun 2018 11:05:55  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:05:55  INFO-Merge RiaDtlTbl Insert statement completed  180511204530
+%11 Jun 2018 11:05:55  INFO-Commit RiaDtlTbl Insert statement completed  180511204530
+%11 Jun 2018 11:05:55  INFO-Processed flag updated to successful -- US676701167
+%11 Jun 2018 11:05:55  INFO-Pick each record to validate -- DE507520867 -- 0230134560 -- NGN -- 100000.00
+%11 Jun 2018 11:05:55  INFO-Call Validator for non FBN Accounts
+%11 Jun 2018 11:05:55  INFO-Order currency and order no -- NGN -- DE507520867
+%11 Jun 2018 11:05:55  INFO-Validate NEFT Currency
+%11 Jun 2018 11:05:55  INFO-NEFTCURRENCYLISTNGN
+%11 Jun 2018 11:05:55  INFO-Order currency -- NGN
+%11 Jun 2018 11:05:55  INFO-NEFTCURRENCYLIST AGAINNGN ==> 3
+%11 Jun 2018 11:05:55  INFO-Check if account number is Nuban Complaint -- 0230134560 -- DE507520867 -- 035150000
+%11 Jun 2018 11:05:55  INFO-Bank Code is -- 0230134560 -- 035
+%11 Jun 2018 11:05:55  INFO-Query for Check Neft for account -- select CUSTOM.IsNuban('0230134560','035') from dual
+%11 Jun 2018 11:05:55  INFO-Account is NUBAN Compliant - 0230134560 -- Y|0230134560
+%11 Jun 2018 11:05:55  INFO-Validate Account Name through FIP == Ogbemuda == Ogierihie
+%11 Jun 2018 11:05:55  INFO-Get Postbridge Key ==> xqN6zwVL8jnNFjZQViYb3/KpCiMRxEclnP0M02JMtMwycKIyMICfjA==
+%11 Jun 2018 11:05:55  INFO-Postbridge key decrypted ==> DA6A231163A0D93B58ADA6A8DEC08370
+%11 Jun 2018 11:05:55  INFO-Name enquiry set ==> 0230134560 == 035
+%11 Jun 2018 11:05:55  INFO-Postbridge Header ==> DA6A231163A0D93B58ADA6A8DEC08370 == FDT
+%11 Jun 2018 11:05:56  INFO-Connect to postbridge service == > JAX-WS RI 2.1.6 in JDK 6: Stub for http://ho-bespoke07.nigeria.firstbank.local/BespokeServices/wsPostBridge/PostBridge.asmx
+%11 Jun 2018 11:06:17  INFO-Name enquiry completed ==> 001 ==[2] Name enquiry failed..
+%11 Jun 2018 11:06:17  INFO-No name fetched ==> [2] Name enquiry failed.. == DE507520867
+%11 Jun 2018 11:06:17  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:06:17  INFO-Merge RiaDtlTbl Insert statement completed  180502153030
+%11 Jun 2018 11:06:17  INFO-Commit RiaDtlTbl Insert statement completed  180502153030
+%11 Jun 2018 11:06:17  INFO-UpdateProcessed flag ==> Y ==> DE507520867
+%11 Jun 2018 11:06:17  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:06:17  INFO-Merge RiaDtlTbl Insert statement completed  180502153030
+%11 Jun 2018 11:06:17  INFO-Commit RiaDtlTbl Insert statement completed  180502153030
+%11 Jun 2018 11:06:17  INFO-Processed flag updated to successful -- DE507520867
+%11 Jun 2018 11:06:17  INFO-Get record for posting for FBN --
+%11 Jun 2018 11:06:17  INFO-Number of records gotten for processing -- 1 -- 2018-06-11 11:06:17.906
+%11 Jun 2018 11:06:17  INFO-Order No -- US619017867
+%11 Jun 2018 11:06:17  INFO-transaction Currency -- NGN
+%11 Jun 2018 11:06:17  INFO-transaction Amount -- 8875.00
+%11 Jun 2018 11:06:17  INFO-transaction Reason --  
+%11 Jun 2018 11:06:17  INFO-Credit Account -- 3104909277
+%11 Jun 2018 11:06:17  INFO-Payment Reference -- null
+%11 Jun 2018 11:06:17  INFO-Tran Pin -- 12857325263
+%11 Jun 2018 11:06:17  INFO-Received Date -- Mon Jun 11 12:00:32 WAT 2018
+%11 Jun 2018 11:06:17  INFO-Senders Name = oshunrinde adetomilola  
+%11 Jun 2018 11:06:17  INFO-Final Credit account -- 3104909277 -- Y
+%11 Jun 2018 11:06:17  INFO-Suspense account to debit -- 99919700002601
+%11 Jun 2018 11:06:17  INFO-Time different maximum ==  100
+%11 Jun 2018 11:06:17  INFO-sysdate: 2018-06-11 11:06:17.0
+%11 Jun 2018 11:06:17  INFO-Difference itself -- -3255000
+%11 Jun 2018 11:06:17  INFO-diffHours: 0
+%11 Jun 2018 11:06:17  INFO-hoursElapsed = false
+%11 Jun 2018 11:06:17  INFO-Post Transaction -- Mon Jun 11 09:15:33 WAT 2018 -- 3104909277 -- RIA/12857325263/oshunrinde adetomilola   -- 99919700002601 -- 8875.00 -- US619017867
+%11 Jun 2018 11:06:18  INFO-Start to post transaction -- Mon Jun 11 11:06:18 WAT 2018
+%11 Jun 2018 11:06:18  INFO-Before Send
+%11 Jun 2018 11:06:18  INFO-After Send
+%11 Jun 2018 11:06:18  INFO-Response -- 000 -- US619017867
+%11 Jun 2018 11:06:18  INFO-End of process record in C24 -- US619017867
+%11 Jun 2018 11:06:18  INFO-Response from Connect24 -- 000
+%11 Jun 2018 11:06:18  INFO-Response description of the response gotten
+%11 Jun 2018 11:06:18  INFO-Get Tran ID Class -- 12857325263 -- 3104909277
+%11 Jun 2018 11:06:18  INFO-SELECT TRAN_ID FROM TBAADM.DTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3104909277' ) AND r.TRAN_RMKS='12857325263' AND r.PART_TRAN_TYPE='C' UNION SELECT TRAN_ID FROM TBAADM.HTD r WHERE r.ACID = (SELECT ACID FROM TBAADM.GAM t WHERE t.FORACID ='3104909277' ) AND r.TRAN_RMKS='12857325263' AND r.PART_TRAN_TYPE='C'
+%11 Jun 2018 11:06:19  INFO-TranId of transaction --S62900729
+%11 Jun 2018 11:06:19  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 11:06:19  INFO-Merge RiaDtlTbl Insert statement completed  180508204530
+%11 Jun 2018 11:06:19  INFO-Commit RiaDtlTbl Insert statement completed  180508204530
+%11 Jun 2018 12:19:26  INFO-Start Process of Transactions !!!
+%11 Jun 2018 12:19:26  INFO-Start loading properties file
+%11 Jun 2018 12:19:26  INFO-Neft Currency NGN
+%11 Jun 2018 12:19:26  INFO-Validate records first -- 
+%11 Jun 2018 12:19:26  INFO-Enter Get record to Validate Generally
+%11 Jun 2018 12:19:31  INFO-Number of records to be validated -- 1
+%11 Jun 2018 12:19:31  INFO-How Many records here 1
+%11 Jun 2018 12:19:31  INFO-Pick each record to validate -- ES2064867866 -- 2020233343 -- NGN -- 126678.12
+%11 Jun 2018 12:19:31  INFO-Call Validator for FBN Accounts
+%11 Jun 2018 12:19:31  INFO-Query to get account record from Finacle -- SELECT FORACID, ACCT_NAME, NVL(FREZ_CODE,0), ACCT_CLS_FLG, ACCT_CRNCY_CODE,GL_SUB_HEAD_CODE,SCHM_CODE,CLR_BAL_AMT FROM TBAADM.GAM r WHERE r.FORACID='2020233343'
+%11 Jun 2018 12:19:31  INFO-Account exist in Finacle -- KRISCOM SYSTEMS --   -- N -- NGN
+%11 Jun 2018 12:19:31  INFO-Start account name validation ==> ES2064867866
+%11 Jun 2018 12:19:31  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 12:19:31  INFO-Merge RiaDtlTbl Insert statement completed  180325154530
+%11 Jun 2018 12:19:31  INFO-Commit RiaDtlTbl Insert statement completed  180325154530
+%11 Jun 2018 12:19:31  INFO-UpdateProcessed flag ==> Y ==> ES2064867866
+%11 Jun 2018 12:19:31  INFO-Edit RiaDtlTbl Code
+%11 Jun 2018 12:19:31  INFO-Merge RiaDtlTbl Insert statement completed  180325154530
+%11 Jun 2018 12:19:31  INFO-Commit RiaDtlTbl Insert statement completed  180325154530
+%11 Jun 2018 12:19:31  INFO-Processed flag updated to successful -- ES2064867866
+%11 Jun 2018 12:19:31  INFO-Get record for posting for FBN --
+%11 Jun 2018 12:19:31  INFO-Number of records gotten for processing -- 0 -- 2018-06-11 12:19:31.344
+%11 Jun 2018 12:19:31  INFO-No record to post -- 2018-06-11 12:19:31.344
+%

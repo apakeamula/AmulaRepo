@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Root p1:noNamespaceSchemaLocation="CancelationRequests_1.0.xsd" xmlns="" xmlns:p1="http://www.w3.org/2001/XMLSchema-instance">
+    <ResponseLayoutVersion>1.0</ResponseLayoutVersion>
+    <RequestType>CancelationRequests</RequestType>
+    <RequestResponses>
+        <CancelationRequest SCOrderNo="UK690072356" />
+        <CancelationRequest SCOrderNo="UK690072456" />
+        <CancelationRequest SCOrderNo="UK690072556" />
+    </RequestResponses>
+    <RequestErrors />
+</Root>

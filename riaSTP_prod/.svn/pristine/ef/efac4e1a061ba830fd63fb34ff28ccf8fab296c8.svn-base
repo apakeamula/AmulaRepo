@@ -1,0 +1,192 @@
+package com.fbn.riathreads;
+
+import com.fbn.bancsconnect.GetTranId;
+import com.fbn.bancsconnect.PostTransaction;
+import com.fbn.bancsconnect.ResponseCode;
+import com.fbn.db.jpa.RiaDtlTbl;
+import com.fbn.db.jpa.RiaDtlTblJpaController;
+import com.fbn.riastp.loadProp;
+import java.sql.Timestamp;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.PersistenceUnit;
+import javax.persistence.Query;
+import org.apache.log4j.Logger;
+
+public class FBNRecordtoPost {
+
+    private static final Logger logFile = Logger.getLogger(FBNRecordtoPost.class);
+    @PersistenceUnit(unitName = "riaSTPPU")
+    EntityManagerFactory emf;
+
+    public void getRecord()
+            throws Exception {
+        logFile.info("Get record for posting for FBN --");
+        String resp = null;
+        String response = null;
+        this.emf = Persistence.createEntityManagerFactory("riaSTPPU");
+        Query notPosted = this.emf.createEntityManager().createNamedQuery("RiaDtlTbl.findByPstdFlgFailFlgProcessedFbnFlg").setParameter("pstdFlg", Character.valueOf('N')).setParameter("failFlg", Character.valueOf('N')).setParameter("processed", Character.valueOf('Y')).setParameter("fbnFlg", Character.valueOf('Y'));
+
+        List<RiaDtlTbl> getRec = notPosted.getResultList();
+        logFile.info("Number of records gotten for processing -- " + getRec.size() + " -- " + new Timestamp(System.currentTimeMillis()));
+        if (getRec.isEmpty()) {
+            System.out.println("No Record Found for Posting");
+            logFile.info("No record to post -- " + new Timestamp(System.currentTimeMillis()));
+            return;
+        }
+        for (RiaDtlTbl orderRec : getRec) {
+            String orderNo = orderRec.getOrderno();
+            logFile.info("Order No -- " + orderNo);
+            String tranCurr = orderRec.getBeneficiarycurrency();
+            logFile.info("transaction Currency -- " + tranCurr);
+            String tranAmt = orderRec.getBeneficiaryamount();
+            logFile.info("transaction Amount -- " + tranAmt);
+            String tranReason = orderRec.getTransferreason();
+            logFile.info("transaction Reason -- " + tranReason);
+            String crAcct = orderRec.getBankaccountno();
+            logFile.info("Credit Account -- " + crAcct);
+            String payRef = orderRec.getPayRef();
+            logFile.info("Payment Reference -- " + payRef);
+            String retryCount = orderRec.getRetryCount();
+            String tranPIN = orderRec.getPin();
+            logFile.info("Tran Pin -- " + tranPIN);
+            Date receivedDate = orderRec.getReceivedDate();
+            logFile.info("Received Date -- " + receivedDate);
+            String senderName = "";
+            if (orderRec.getCustfirstname() != null) {
+                senderName = senderName + orderRec.getCustfirstname();
+            }
+            if (orderRec.getCustlastname() != null) {
+                senderName = senderName + " " + orderRec.getCustlastname();
+            }
+            if (orderRec.getCustlastname2() != null) {
+                senderName = senderName + " " + orderRec.getCustlastname2();
+            }
+            logFile.info("Senders Name = " + senderName);
+            tranReason = "RIA/" + tranPIN + "/" + senderName;
+            Date sendDate = null;
+            if (orderRec.getCreTime() == null) {
+                sendDate = new Date();
+                try {
+                    RiaDtlTblJpaController em = new RiaDtlTblJpaController(this.emf);
+                    em.getEntityManager();
+                    RiaDtlTbl ord = em.findRiaDtlTbl(orderNo);
+                    ord.setCreTime(sendDate);
+                    em.edit(ord);
+                    logFile.info("Creation date entered in database --" + orderNo);
+                } catch (Exception ex) {
+                    logFile.error("Error occurred in set creation time -- " + ex.getMessage());
+                }
+            } else {
+                sendDate = orderRec.getCreTime();
+            }
+            System.out.println("Credit Account:" + crAcct);
+            logFile.info("Final Credit account -- " + crAcct + " -- " + orderRec.getFbnFlg().toString());
+            String suspAccount = loadProp.SUSPENSELIST[java.util.Arrays.asList(loadProp.CURRENCYLIST).indexOf(tranCurr)];
+            System.out.println("Suspense Account=" + suspAccount);
+            logFile.info("Suspense account to debit -- " + suspAccount);
+
+            logFile.info("Time different maximum ==  " + loadProp.FBNPOSTINGHOURS);
+            Timestamp sysdate = new Timestamp(loadProp.SDF.parse(Calendar.getInstance().getTime().toString()).getTime());
+            logFile.info("sysdate: " + sysdate);
+            long diff = sysdate.getTime() - receivedDate.getTime();
+            logFile.info("Difference itself -- " + diff);
+            long diffHours = TimeUnit.MILLISECONDS.toHours(diff);
+            logFile.info("diffHours: " + diffHours);
+
+            boolean hoursElapsed = diffHours > Long.parseLong(loadProp.FBNPOSTINGHOURS);
+            logFile.info("hoursElapsed = " + hoursElapsed);
+            if (hoursElapsed) {
+                try {
+                    RiaDtlTblJpaController em = new RiaDtlTblJpaController(this.emf);
+                    em.getEntityManager();
+                    RiaDtlTbl ord = em.findRiaDtlTbl(orderNo);
+                    ord.setFailFlg('Y');
+                    logFile.info("FailFlg = Y");
+                    ord.setFailReason("FBN posting hours elapsed. Transaction Failed");
+                    logFile.info("Failed Reasons: " + ord.getResponseMessage() + "\n ; FBN posting hours elapsed ==> " + ord.getOrderno());
+                    em.edit(ord);
+                } catch (Exception e) {
+                    System.out.println("RiaDtlTblJpaController Exception: " + e.toString());
+                    logFile.error("RiaDtlTblJpaController Exception: " + e.toString());
+                }
+            } else {
+                try {
+                    PostTransaction post = new PostTransaction();
+                    resp = post.postTran(orderNo, crAcct, tranReason, suspAccount, tranAmt, sendDate, tranPIN, tranCurr);
+                    logFile.info("Response from Connect24 -- " + resp);
+                    System.out.println(resp);
+                } catch (Exception e) {
+                    System.out.println("PostTransaction Exception: " + e.toString());
+                    logFile.error("Error occurred in Finacle Posting -- " + e.getMessage());
+                    return;
+                }
+                Calendar cal = Calendar.getInstance();
+                Timestamp sysdate1 = new Timestamp(loadProp.SDF.parse(cal.getTime().toString()).getTime());
+                try {
+                    ResponseCode checkResponseCode = new ResponseCode();
+                    response = checkResponseCode.CheckResponse(resp);
+                    logFile.info("Response description of the response gotten");
+                } catch (Exception e) {
+                    System.out.println("Exception: Cannot Get Response Code Details- " + e.toString());
+                    logFile.error("Exception: Cannot Get Response Code Details- " + e.getMessage());
+                }
+                try {
+                    RiaDtlTblJpaController em = new RiaDtlTblJpaController(this.emf);
+                    em.getEntityManager();
+                    RiaDtlTbl ord = em.findRiaDtlTbl(orderNo);
+                    if (resp.equals("000")) {
+                        GetTranId tran = new GetTranId();
+                        String tranid = "";
+                        tranid = tran.getTranIdCredit(tranPIN, crAcct);
+                        if (tranid.equalsIgnoreCase("")) {
+                            ord.setCreTime(sysdate1);
+                            ord.setResponseCode("913");
+                            ord.setResponseMessage("Duplicate Transmission");
+                            retryCount = String.valueOf(Integer.parseInt(retryCount) + 1);
+                            ord.setRetryCount(retryCount);
+                            em.edit(ord);
+                        } else {
+                            ord.setPstdFlg('Y');
+                            ord.setPstdDate(sysdate1);
+                            ord.setTranId(tranid);
+                            ord.setResponseCode(resp);
+                            ord.setResponseMessage(response);
+                            em.edit(ord);
+                        }
+                    } else {
+                        if (resp.equals("913")) {
+                            GetTranId tran = new GetTranId();
+                            String tranid = "";
+                            tranid = tran.getTranIdCredit(tranPIN, crAcct);
+                            if (!tranid.trim().equals("")) {
+                                ord.setPstdFlg('Y');
+                                ord.setPstdDate(sysdate1);
+                                ord.setTranId(tranid);
+                                ord.setResponseCode(resp);
+                            ord.setResponseMessage(response);
+                                em.edit(ord);
+                            } else {
+                                ord.setCreTime(sysdate1);
+                                em.edit(ord);
+                            }
+                        } else {
+                            ord.setResponseCode(resp);
+                            ord.setResponseMessage(response);
+                            retryCount = String.valueOf(Integer.parseInt(retryCount) + 1);
+                            ord.setRetryCount(retryCount);
+                            em.edit(ord);
+                        }
+                    }
+                } catch (Exception e) {
+                    System.out.println("RiaDtlTblJpaController Exception: " + e.toString());
+                    logFile.error("RiaDtlTblJpaController Exception: " + e.toString());
+                }
+            }
+        }
+    }
+}

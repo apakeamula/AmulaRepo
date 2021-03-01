@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DownloadedOrders_1.0.xsd">
+    <ResponseLayoutVersion>1.0</ResponseLayoutVersion>
+    <RequestType>OrdersForDownload</RequestType>
+    <RequestResponses/>
+    <RequestErrors/>
+</Root>

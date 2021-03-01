@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="riaSTPPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.fbn.db.jpa.RiaDtlTbl</class>
+    <class>com.fbn.validate.gamRecord</class>
+    <class>com.fbn.db.jpa.GiroTbl</class>
+    <class>com.fbn.db.jpa.giroEmbed</class>
+    <class>com.fbn.validate.validateNeft</class>
+    <class>com.fbn.db.jpa.AtcTbl</class>
+    <class>com.fbn.db.jpa.RiaResponseTbl</class>
+    <class>com.fbn.db.jpa.RiaRequestsTbl</class>
+    <class>com.fbn.db.jpa.NeftCommisionChargeTbl</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:oracle:thin:@172.16.250.53:1521:FBNMOCK"/>
+      <property name="javax.persistence.jdbc.password" value="custom"/>
+      <property name="javax.persistence.jdbc.driver" value="oracle.jdbc.OracleDriver"/>
+      <property name="javax.persistence.jdbc.user" value="custom"/>
+    </properties>
+  </persistence-unit>
+</persistence>
