@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/bsh-2.0b4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/commons-cli.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/commons-codec-1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/commons-lang-2.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/cweb-extser-0.1-b2-dev.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/eclipselink.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/httpclient-4.3-beta1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/httpcore-4.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/javax.persistence_2.1.0.v201304241213.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/jaxb-api-2.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/jdbm-1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/jdom.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/jdom-2.0.5.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/je-4.0.103.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/jline-0.9.91.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/jpos.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/log4j-1.2.16.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/ojdbc14.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/org.eclipse.persistence.jpa.jpql_2.5.0.v20130507-3faac2b.jar"/>
-	<classpathentry kind="lib" path="C:/Users/sn029154/Downloads/Ria/Deployment/prod/new/lib/lib/ProductionPostBridgeServiceClient.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/commons-cli.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/commons-codec-1.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/cweb-extser-0.1-b2-dev.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/eclipselink.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/httpclient-4.3-beta1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/httpcore-4.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/javax.persistence_2.1.0.v201304241213.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/jaxb-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/jdbm-1.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/jdom.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/jdom-2.0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/je-4.0.103.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/jline-0.9.91.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/jpos.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/org.eclipse.persistence.jpa.jpql_2.5.0.v20130507-3faac2b.jar"/>
+	<classpathentry kind="lib" path="C:/Users/sn029216/git/AmulaRepo/riaSTP_prod/lib/ProductionPostBridgeServiceClient.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
