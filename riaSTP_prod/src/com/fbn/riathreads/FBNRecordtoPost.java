@@ -23,9 +23,25 @@ public class FBNRecordtoPost {
     @PersistenceUnit(unitName = "riaSTPPU")
     EntityManagerFactory emf;
    
-    private  String tempCurr;  //temp variable to trap NGN currency
+    private  String tempCurr = "";  //temp variable to trap NGN currency
 
 
+    private String getTempCurr(String foracid){
+        try {
+            String getQuery = "SELECT ACCT_CRNCY_CODE FROM TBAADM.GAM r WHERE r.FORACID='" + foracid + "'";
+            System.out.println(getQuery);
+            this.logFile.info("Query to get account record from Finacle -- " + getQuery);
+            this.emf = Persistence.createEntityManagerFactory("riaSTPPU");
+            Query query = this.emf.createEntityManager().createNativeQuery(getQuery);
+            List<Object[]> currResult = query.getResultList();
+
+            if (currResult.isEmpty()) {
+                logFile.info("getTemp Curr Method-- " + ((Object[]) currResult.get(0))[0].toString());
+                return ((Object[]) currResult.get(0))[0].toString();
+            }
+            else return "";
+        } catch (Exception e){logFile.error("Exception occurred in getTempCurr Method -- "+ e.getMessage()); return "";}
+    }
     public void getRecord()
             throws Exception {
         logFile.info("Get record for posting for FBN --");
@@ -48,11 +64,9 @@ public class FBNRecordtoPost {
             String crAcct = orderRec.getBankaccountno();           //A
             logFile.info("Credit Account -- " + crAcct);
             //condition for trapping
-            if (tranCurr.equalsIgnoreCase(loadProp.NGN)) {       
-                tranCurr = loadProp.USD;
-                tempCurr = loadProp.NGN;             
-                crAcct = loadProp.NGNTEMPCREACCT;
-            }
+            tempCurr = getTempCurr(crAcct);
+            logFile.info("Temp Currency Value-- "+ tempCurr );
+            if (tempCurr.equalsIgnoreCase(loadProp.NGN))  crAcct = loadProp.NGNTEMPCREACCT;
             logFile.info("transaction Currency -- " + tranCurr);
             logFile.info("Credit Account -- " + crAcct);
             String tranAmt = orderRec.getBeneficiaryamount();
@@ -162,6 +176,7 @@ public class FBNRecordtoPost {
                             em.edit(ord);
                         } else {
                             //if statement to validate NGN, posted flag set to T:temporary
+                            logFile.error("temp Curr-- "+ tempCurr);
                             if (tempCurr.equalsIgnoreCase(loadProp.NGN)) ord.setPstdFlg('T');   //k
                             else ord.setPstdFlg('Y');
                             ord.setPstdDate(sysdate1);
@@ -176,6 +191,7 @@ public class FBNRecordtoPost {
                             String tranid = "";
                             tranid = tran.getTranIdCredit(tranPIN, crAcct);
                             if (!tranid.trim().equals("")) {
+                                logFile.error("temp Curr-- "+ tempCurr);
                                 //if statement to validate NGN, posted flag set to T:temporary
                                 if (tempCurr.equalsIgnoreCase(loadProp.NGN)) ord.setPstdFlg('T');
                                 else ord.setPstdFlg('Y');

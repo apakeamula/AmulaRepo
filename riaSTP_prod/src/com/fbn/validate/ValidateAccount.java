@@ -84,7 +84,8 @@ public class ValidateAccount {
                 em.edit(ord);
                 return "invalid";
             }
-            if (!currency.equals(ordCurrency)) {
+            if (currency.equalsIgnoreCase(loadProp.NGN) || currency.equalsIgnoreCase(loadProp.USD)){}
+           else  {
                 ord.setFailReason("Account Currency Mismatch");
                 ord.setFailFlg('Y');
                 em.edit(ord);
