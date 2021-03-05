@@ -27,17 +27,19 @@ public class FBNRecordtoPost {
 
 
     private String getTempCurr(String foracid){
+        String curr = "";
         try {
-            String getQuery = "SELECT ACCT_CRNCY_CODE FROM TBAADM.GAM r WHERE r.FORACID='" + foracid + "'";
+            String getQuery = "SELECT FORACID, ACCT_CRNCY_CODE FROM TBAADM.GAM r WHERE r.FORACID='" + foracid + "'";
             System.out.println(getQuery);
             this.logFile.info("Query to get account record from Finacle -- " + getQuery);
             this.emf = Persistence.createEntityManagerFactory("riaSTPPU");
             Query query = this.emf.createEntityManager().createNativeQuery(getQuery);
             List<Object[]> currResult = query.getResultList();
 
-            if (currResult.isEmpty()) {
-                logFile.info("getTemp Curr Method-- " + ((Object[]) currResult.get(0))[0].toString());
-                return ((Object[]) currResult.get(0))[0].toString();
+            if (!currResult.isEmpty()) {
+                curr = ((Object[]) currResult.get(0))[1].toString();
+                logFile.info("getTemp Curr Method currency = -- " + curr);
+                return curr;
             }
             else return "";
         } catch (Exception e){logFile.error("Exception occurred in getTempCurr Method -- "+ e.getMessage()); return "";}
