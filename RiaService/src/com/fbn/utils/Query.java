@@ -22,11 +22,11 @@ public class Query implements RiaConstants {
     }
     
     public String getRiaTxn() {
-        return  "select ORDERNO, BENEFICIARYCURRENCY, BENEFICIARYAMOUNT, BANKACCOUNTNO from " + ria_table + " where FBN_FLG ='Y' and PROCESSED = 'Y' and PSTD_FLG = 'T' and FAIL_FLG = 'N' and BENEFICIARYCURRENCY = 'NGN'";
+        return  "select ORDERNO, BENEFICIARYCURRENCY, BENEFICIARYAMOUNT, BANKACCOUNTNO from " + ria_table + " where FBN_FLG ='Y' and PROCESSED = 'Y' and PSTD_FLG = 'T' and FAIL_FLG = 'N' and BENEFICIARYCURRENCY = 'USD'";
     }
 
     public String getUpdateRiaTxn() {
-        return  "select ORDERNO from " + ria_table + " where FBN_FLG ='Y' and PROCESSED = 'Y' and PSTD_FLG = 'M' and FAIL_FLG = 'N' and BENEFICIARYCURRENCY  = 'NGN'";
+        return  "select ORDERNO from " + ria_table + " where FBN_FLG ='Y' and PROCESSED = 'Y' and PSTD_FLG = 'M' and FAIL_FLG = 'N' and BENEFICIARYCURRENCY  = 'USD'";
     }
     
     public String insertRiaTxn() {
@@ -38,11 +38,9 @@ public class Query implements RiaConstants {
 
     public String getUpdateStatus() {
         return "select tran_status from " + mto_table + " where mtocode = '" + mtocode + "' and txnid = '" + orderNo + "'";
-      
     }
 
     public String updateRiaPostStatus () {
         return "update " + ria_table + " set PSTD_FLG = 'Y', PSTD_DATE = (select to_date(to_char(SYSDATE, 'MM/DD/YYYY HH24:MI:SS'),('MM/DD/YYYY HH24:MI:SS')) from dual), RESPONSE_MESSAGE = 'Transaction Successful From RiaService' where orderno = '" + orderNo + "'";
-        
     }
 }

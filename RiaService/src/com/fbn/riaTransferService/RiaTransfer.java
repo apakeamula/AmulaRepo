@@ -4,9 +4,13 @@ import com.fbn.utils.*;
 import org.apache.log4j.Logger;
 import java.sql.*;
 
-public  class RiaTransfer implements RiaConstants {
+public  class RiaTransfer extends Thread implements RiaConstants {
     private static final Logger logger = LogGEN.getLoggerInstance(RiaTransfer.class);
-    public void moveRiaTxn (){
+
+    public void run(){
+        moveRiaTxn();
+    }
+    private void moveRiaTxn (){
         LoadProp loadProp = new LoadProp();
         try {
             ConnectDb connectDb = new ConnectDb();

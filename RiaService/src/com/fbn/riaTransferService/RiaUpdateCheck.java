@@ -7,9 +7,13 @@ import com.fbn.utils.RiaConstants;
 import org.apache.log4j.Logger;
 import java.sql.*;
 
-public class RiaUpdateCheck implements RiaConstants {
+public class RiaUpdateCheck extends Thread implements RiaConstants {
     private static final Logger logger = LogGEN.getLoggerInstance(RiaUpdateCheck.class);
-    public void checkRiaStatus (){
+
+    public void run(){
+        checkRiaStatus();
+    }
+    private void checkRiaStatus (){
         ConnectDb connectDb = new ConnectDb();
         Connection connection = connectDb.connection();
         Query query = new Query();

@@ -12,12 +12,8 @@ public class RiaStartService {
    	try {
    	logger.info("Service Started");
    	// first commit from local machine
-   	RiaTransfer riaTransfer = new RiaTransfer();
-   	RiaUpdateCheck riaUpdateCheck = new RiaUpdateCheck();
-
-   	riaTransfer.moveRiaTxn();
-   	riaUpdateCheck.checkRiaStatus();
-
+   new RiaTransfer().start();
+   new RiaUpdateCheck().start();
    	logger.info("Service Completed");
    	} catch (Exception e){
    		logger.error("Exception occurred. "+ e.getMessage());
