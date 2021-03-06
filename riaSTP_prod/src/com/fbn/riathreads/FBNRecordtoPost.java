@@ -26,7 +26,7 @@ public class FBNRecordtoPost {
     private  String tempCurr = "";  //temp variable to trap NGN currency
 
 
-    private String getTempCurr(String foracid){
+	private String getTempCurr(String foracid){
         String curr = "";
         try {
             String getQuery = "SELECT FORACID, ACCT_CRNCY_CODE FROM TBAADM.GAM r WHERE r.FORACID='" + foracid + "'";
@@ -34,10 +34,19 @@ public class FBNRecordtoPost {
             this.logFile.info("Query to get account record from Finacle -- " + getQuery);
             this.emf = Persistence.createEntityManagerFactory("riaSTPPU");
             Query query = this.emf.createEntityManager().createNativeQuery(getQuery);
-            List<Object[]> currResult = query.getResultList();
+         //  List<Object[]> currResult = query.getResultList();
 
+            List<List<String>> currResult = query.getResultList();
+
+//            for (Object [] a : currResult){
+//             curr = a[1].toString();
+//             break;
+//            }
+//            logFile.info("curr: "+ curr);
+//
+//            return curr;
             if (!currResult.isEmpty()) {
-                curr = ((Object[]) currResult.get(0))[1].toString();
+                curr = currResult.get(0).get(1);
                 logFile.info("getTemp Curr Method currency = -- " + curr);
                 return curr;
             }
