@@ -34,19 +34,13 @@ public class FBNRecordtoPost {
             this.logFile.info("Query to get account record from Finacle -- " + getQuery);
             this.emf = Persistence.createEntityManagerFactory("riaSTPPU");
             Query query = this.emf.createEntityManager().createNativeQuery(getQuery);
-         //  List<Object[]> currResult = query.getResultList();
-
-            List<List<String>> currResult = query.getResultList();
-
-//            for (Object [] a : currResult){
-//             curr = a[1].toString();
-//             break;
+           List<Object[]> currResult = query.getResultList();
+//            List<List<String>> currResult = query.getResultList();
+//            if (!currResult.isEmpty())
+//               return currResult.get(0).get(1);
 //            }
-//            logFile.info("curr: "+ curr);
-//
-//            return curr;
             if (!currResult.isEmpty()) {
-                curr = currResult.get(0).get(1);
+                curr = ((Object[]) currResult.get(0))[1].toString();
                 logFile.info("getTemp Curr Method currency = -- " + curr);
                 return curr;
             }
