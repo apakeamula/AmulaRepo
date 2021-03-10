@@ -28,6 +28,7 @@ public class GetStatusForUpdate
     String endpointurl = loadProp.ENDPOINTURL;
     String endpointtimeout = loadProp.ENDPOINTTIMEOUT;
     String replyStatus = "";
+
     
     this.emf = Persistence.createEntityManagerFactory("riaSTPPU");
     try
@@ -45,8 +46,7 @@ public class GetStatusForUpdate
       String xmlVal = "";
       xmlVal = "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ces=\"CES.Services.FXGlobal\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <ces:InputOrderStatusNotices>\n           <ces:xmlDoc>\n<Root xmlns:ns2=\"CES.Services.FXGlobal\">\n  <PayingCorrespID>6737914</PayingCorrespID>\n  <InputLayoutVersion>1.1</InputLayoutVersion>\n  <OrderStatusNotices>\n";
       updateRec = new ArrayList();
-      for (RiaDtlTbl orderRec : getRec)
-      {
+      for (RiaDtlTbl orderRec : getRec) {
         String posted = orderRec.getPstdFlg().toString();
         String fail = orderRec.getFailFlg().toString();
         String orderNo = orderRec.getOrderno();
@@ -54,7 +54,11 @@ public class GetStatusForUpdate
         String returned = orderRec.getReturnedFlg().toString();
         String process = orderRec.getProcessed().toString();
         String statuss = orderRec.getStatus();
-        if ((posted.equals("N")) && (fail.equals("N")))
+        if (posted.equalsIgnoreCase(loadProp.FLAGM) || posted.equalsIgnoreCase(loadProp.FLAGT)) {
+          logFile.info("Skipping transaction: transferred to MTO Table. Order No-- "+orderNo);
+          continue;
+        }
+        else if ((posted.equals("N")) && (fail.equals("N")))
         {
           System.out.println("No Record Found for Update");
         }

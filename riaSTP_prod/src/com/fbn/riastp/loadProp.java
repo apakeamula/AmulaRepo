@@ -44,7 +44,9 @@
         public static String NGNTEMPCREACCT; //Variable-Field for the NGN Temporary credit account
         public static String NGN;   //NGN Currency-Field 
         public static String USD;  //USD Currency-Field 
-    
+        public static String FLAGM;  //M Flag
+        public static String FLAGT;  //T Flag
+
      static {
          try  {
              logFile.info("Start loading properties file");
@@ -98,6 +100,8 @@
              NGNTEMPCREACCT = prop.getProperty("NGNTEMPCREACCT"); //assign from ria.proprties
              NGN = prop.getProperty("NGN"); //assign from ria.proprties
              USD = prop.getProperty("USD"); //assign from ria.proprties
+             FLAGM = prop.getProperty("M"); //assign from ria.proprties
+             FLAGT = prop.getProperty("T"); //assign from ria.proprties
                     } catch (UnsupportedEncodingException ex) {
              ex.printStackTrace();
              logFile.error("Error occurred in load property file - Unsupported Exception --" + ex.getMessage());
